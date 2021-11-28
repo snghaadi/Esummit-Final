@@ -51,6 +51,7 @@
                         echo "<td>{$row['number']}</td>";
                         echo "<td>{$row['college']}</td>";
                         echo "<td>{$row['year']}</td>";
+                        echo "<td>{$row['course']}</td>";
                         echo "<td><a href='delete.php?id={$row['id']}'><button type='submit' class='bg-blue hover:bg-blue-dark text-dark font-bold py-2 px-4 rounded'>Delete</button></a></td>";
                         echo "</tr>";
                     }

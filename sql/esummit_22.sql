@@ -35,17 +35,15 @@ CREATE TABLE `techworkshop` (
   `number` varchar(255) NOT NULL,
   `college` varchar(255) NOT NULL,
   `year` varchar(255) NOT NULL,
-  `course` varchar(255) NOT NULL,
-  `exp` varchar(255) NOT NULL,
-  `ques` text NOT NULL
+  `course` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `techworkshop`
 --
 
-INSERT INTO `techworkshop` (`id`, `name`, `email`, `number`, `college`, `year`, `course`, `exp`, `ques`) VALUES
-(1, 'Utkarsh Mishra', 'harshutkarshmishra1998@gmail.com', '8957944460', 'MANIT', 'Third', 'B.Tech', 'Intermediate', 'Give meaning to my life...for god sake');
+INSERT INTO `techworkshop` (`id`, `name`, `email`, `number`, `college`, `year`, `course`) VALUES
+(1, 'Utkarsh Mishra', 'harshutkarshmishra1998@gmail.com', '8957944460', 'MANIT', 'Third', 'B.Tech');
 
 -- --------------------------------------------------------
 
@@ -60,17 +58,15 @@ CREATE TABLE `workshop` (
   `number` varchar(255) NOT NULL,
   `college` varchar(255) NOT NULL,
   `year` varchar(255) NOT NULL,
-  `course` varchar(255) NOT NULL,
-  `exp` varchar(255) NOT NULL,
-  `ques` text NOT NULL
+  `course` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `workshop`
 --
 
-INSERT INTO `workshop` (`id`, `name`, `email`, `number`, `college`, `year`, `course`, `exp`, `ques`) VALUES
-(1, 'Utkarsh Mishra', 'harshutkarshmishra1998@gmail.com', '8957946660', 'MANIT', 'First', 'B.TECH', 'Intermediate', 'Give meaning to my life...for god sake');
+INSERT INTO `workshop` (`id`, `name`, `email`, `number`, `college`, `year`, `course`) VALUES
+(1, 'Utkarsh Mishra', 'harshutkarshmishra1998@gmail.com', '8957946660', 'MANIT', 'First', 'B.TECH');
 
 --
 -- Indexes for dumped tables
