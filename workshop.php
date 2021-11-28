@@ -27,7 +27,7 @@
         }
         elseif($update_file)
         {
-            echo "Success";
+            echo "You are sucessfully registered";
             ?>
             <script>swal("Good job!", "You are sucessfully registered", "success")
             </script>
