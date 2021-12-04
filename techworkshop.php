@@ -11,13 +11,12 @@
         $college = mysqli_escape_string($connection, $_POST['college']);
         $year = mysqli_escape_string($connection, $_POST['year']);
         $course = mysqli_escape_string($connection, $_POST['course']);
-        $exp = mysqli_escape_string($connection, $_POST['exp']);
-        $ques = mysqli_escape_string($connection, $_POST['ques']);
 
 
-        $query = "INSERT INTO techworkshop (name, email, number, college, year, course, exp, ques)";
+        // $query = "INSERT INTO techworkshop (name, email, number, college, year, course)";
+        $query = "INSERT INTO techworkshop_ds (name, email, number, college, year, course)";
 
-        $query .= "VALUES('{$name}', '{$email}', '{$number}', '{$college}', '{$year}', '{$course}', '{$exp}', '{$ques}')";
+        $query .= "VALUES('{$name}', '{$email}', '{$number}', '{$college}', '{$year}', '{$course}')";
 
         $update_file = mysqli_query($connection, $query);
         if(!$update_file)
