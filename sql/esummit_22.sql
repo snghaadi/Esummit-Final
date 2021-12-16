@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.5
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Generation Time: Nov 27, 2021 at 02:59 PM
--- Server version: 10.5.12-MariaDB-cll-lve
--- PHP Version: 7.2.34
+-- Host: 127.0.0.1
+-- Generation Time: Dec 08, 2021 at 08:58 AM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 8.0.13
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -48,6 +47,29 @@ INSERT INTO `techworkshop` (`id`, `name`, `email`, `number`, `college`, `year`, 
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `techworkshop_ds`
+--
+
+CREATE TABLE `techworkshop_ds` (
+  `id` int(16) NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `number` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `college` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `year` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `course` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `techworkshop_ds`
+--
+
+INSERT INTO `techworkshop_ds` (`id`, `name`, `email`, `number`, `college`, `year`, `course`) VALUES
+(1, 'Utkarsh Mishra', 'harshutkarshmishra1998@gmail.com', '8957946660', 'MANIT', '4', 'B.Tech');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `workshop`
 --
 
@@ -79,6 +101,12 @@ ALTER TABLE `techworkshop`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `techworkshop_ds`
+--
+ALTER TABLE `techworkshop_ds`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `workshop`
 --
 ALTER TABLE `workshop`
@@ -92,6 +120,12 @@ ALTER TABLE `workshop`
 -- AUTO_INCREMENT for table `techworkshop`
 --
 ALTER TABLE `techworkshop`
+  MODIFY `id` int(16) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `techworkshop_ds`
+--
+ALTER TABLE `techworkshop_ds`
   MODIFY `id` int(16) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
