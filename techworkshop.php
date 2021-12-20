@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 <?php include 'include/db.php'; ?>
@@ -34,4 +35,3 @@ if (!$update_file) {
     header("refresh:1;url=techworkshop.html");
 }
 // }
-?>
