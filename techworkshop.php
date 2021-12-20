@@ -14,7 +14,8 @@
 
 
         // $query = "INSERT INTO techworkshop (name, email, number, college, year, course)";
-        $query = "INSERT INTO techworkshop_ds (name, email, number, college, year, course)";
+        // $query = "INSERT INTO techworkshop_ds (name, email, number, college, year, course)";
+        $query = "INSERT INTO techworkshop_es (name, email, number, college, year, course)";
 
         $query .= "VALUES('{$name}', '{$email}', '{$number}', '{$college}', '{$year}', '{$course}')";
 
