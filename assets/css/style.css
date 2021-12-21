@@ -831,8 +831,8 @@ nav .main-menu2 li a::before {
   background: -o-linear-gradient(293deg, #c1272d 0%, #991f24 100%);
   background: linear-gradient(293deg, #c1272d 0%, #991f24 100%);
   z-index: -1;
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
+  visibility: visible;
   -webkit-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
@@ -847,13 +847,13 @@ nav .main-menu2 li a::before {
 }
 
 .btn2:hover {
-  border: 2px solid transparent;
-  color: #ffffff;
+  border: 2px solid #003e82;
+  color: #0067d6;
 }
 
 .btn2:hover::after {
-  opacity: 1;
-  visibility: visible;
+  opacity: 0;
+  visibility: hidden;
 }
 
 /* Form */
@@ -3525,7 +3525,7 @@ nav .main-menu2 li a::before {
     width: 92%;
     position: absolute;
     top: -48px;
-    left: 0%;
+    /* left: 0%; */
   }
 }
 
@@ -3640,7 +3640,7 @@ nav .main-menu2 li a::before {
 }
 
 .about-area2 .ashapes .vec2 {
-  left: 0%;
+  /* left: 0%; */
   top: 0%;
 }
 
@@ -3755,7 +3755,7 @@ nav .main-menu2 li a::before {
   -webkit-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
-  margin-bottom: 30px;
+  margin-bottom: 90px;
 }
 
 .single-speaker-2 .img-box img {

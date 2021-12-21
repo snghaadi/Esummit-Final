@@ -45,7 +45,7 @@
          * Main downCount function that calculates everything
          */
         function countdown () {
-            var target_date = new Date('01/08/2022 11:00:00'), // set target date
+            var target_date = new Date('01/07/2022 11:00:00'), // set target date
                 current_date = currentDate(); // get fixed current date
 
             // difference of dates
