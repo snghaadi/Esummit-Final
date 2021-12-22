@@ -194,3 +194,19 @@ Version        : 1.0
     });
 
 })(jQuery);
+
+
+var checkbox = document.getElementById('flexCheckDefault');
+var input = document.getElementById('manit-mail');
+
+checkbox.addEventListener('click', function () {
+    console.log("click");
+    console.log(input)
+    if (input.style.display != 'block') {
+        input.style.display = 'block';
+    } else {
+        console.log(document.getElementById('manit-mail-input').value)
+        document.getElementById('manit-mail-input').value = '';
+        input.style.display = 'none';
+    }
+});
