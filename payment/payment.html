@@ -7,219 +7,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/payment.css" />
 </head>
 
-<body class="antialiased font-sans bg-gray-200 overflow-hidden">
-  <div class="" style="">
-    <div class="bg-gray-100">
-      <div class="max-w-7xl mx-auto py-12 sm:px-6 lg:px-8">
-        <div class="max-w-4xl mx-auto">
-          <div class="bg-white shadow overflow-hidden sm:rounded-lg">
-            <div class="px-4 py-2 sm:px-6">
-              <h3 class="text-lg leading-6 font-medium text-gray-900">
-                Payment Information
-              </h3>
-              <p class="mt-1 max-w-2xl text-sm text-gray-500">
-                Personal details and application.
-              </p>
-            </div>
-            <div class="border-t border-gray-200">
-              <dl>
-                <div class="
-                      bg-gray-50
-                      px-4
-                      py-2
-                      sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6
-                    ">
-                  <dt class="text-sm font-medium text-gray-500">Full name</dt>
-                  <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                    <input type="text" class="
-                          px-2
-                          py-3
-                          mt-1
-                          focus:border-2
-                          focus:ring-indigo-500
-                          focus:border-indigo-500
-                          block
-                          w-full
-                          shadow-sm
-                          sm:text-sm
-                          border-gray-300 border-2
-                          rounded-md
-                        " value="Mihir Waykole" />
-                  </dd>
-                </div>
-                <div class="
-                      bg-white
-                      px-4
-                      py-2
-                      sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6
-                    ">
-                  <dt class="text-sm font-medium text-gray-500">
-                    Email Address
-                  </dt>
-                  <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                    <input type="email" class="
-                          px-2
-                          py-3
-                          mt-1
-                          focus:border-2
-                          focus:ring-indigo-500
-                          focus:border-indigo-500
-                          block
-                          w-full
-                          shadow-sm
-                          sm:text-sm
-                          border-gray-300 border-2
-                          rounded-md
-                        " value="mihirwaykole1703@yahoo.com" />
-                  </dd>
-                </div>
-                <div class="
-                      bg-gray-50
-                      px-4
-                      py-2
-                      sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6
-                    ">
-                  <dt class="text-sm font-medium text-gray-500">
-                    Plan Duration
-                  </dt>
-                  <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                    <input type="text" class="
-                          px-2
-                          py-3
-                          mt-1
-                          focus:border-2
-                          focus:ring-indigo-500
-                          focus:border-indigo-500
-                          block
-                          w-full
-                          shadow-sm
-                          sm:text-sm
-                          border-gray-300 border-2
-                          rounded-md
-                        " value="3 months" />
-                  </dd>
-                </div>
-                <div class="
-                      bg-white
-                      px-4
-                      py-2
-                      sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6
-                    ">
-                  <dt class="text-sm font-medium text-gray-500">
-                    Payable amount
-                  </dt>
-                  <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                    <div class="mt-1 relative rounded-md shadow-sm">
-                      <div class="
-                            absolute
-                            inset-y-0
-                            left-0
-                            pl-3
-                            flex
-                            items-center
-                            pointer-events-none
-                          ">
-                        <span class="text-gray-500 sm:text-sm font-bold">
-                          &#8377;
-                        </span>
-                      </div>
-                      <input disabled type="text" name="price" id="price" class="
-                            focus:ring-indigo-500 focus:border-indigo-500
-                            block
-                            w-full
-                            pl-7
-                            pr-12
-                            sm:text-sm
-                            border-gray-300
-                            rounded-md
-                            px-2
-                            py-3
-                            border-2
-                          " placeholder="0.00" value="120" />
-                      <div class="absolute inset-y-0 right-0 flex items-center">
-                        <label for="currency" class="sr-only">Currency</label>
-                        <select id="currency" name="currency" class="
-                              focus:ring-indigo-500 focus:border-indigo-500
-                              h-full
-                              py-0
-                              pl-2
-                              pr-7
-                              border-transparent
-                              bg-transparent
-                              text-gray-500
-                              sm:text-sm
-                              rounded-md
-                            ">
-                          <option>INR</option>
-                        </select>
-                      </div>
-                    </div>
-                  </dd>
-                </div>
-                <div class="
-                      bg-gray-50
-                      px-4
-                      py-2
-                      sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6
-                    ">
-                  <dt class="text-sm font-medium text-gray-500">About</dt>
-                  <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                    <textarea class="
-                          form-control
-                          block
-                          w-full
-                          px-3
-                          py-1.5
-                          text-sm
-                          font-normal
-                          text-gray-700
-                          bg-white bg-clip-padding
-                          border border-solid border-gray-300
-                          rounded
-                          transition
-                          ease-in-out
-                          m-0
-                          focus:text-gray-700
-                          focus:bg-white
-                          focus:border-blue-600
-                          focus:outline-none
-                          overflow-hidden
-                        " id="exampleFormControlTextarea1" rows="6" disabled placeholder="Your message">
-lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, expedita molestias. Sint magni inventore recusandae perspiciatis fugit soluta repudiandae quidem odit, atque totam necessitatibus doloribus, aspernatur voluptatem pariatur, molestiae temporibus magnam est facere delectus exercitationem sit. Reprehenderit, repellendus non, accusantium soluta minus corrupti autem quo quod dignissimos quis nobis cupiditate!
-                      </textarea>
-                  </dd>
-                </div>
-              </dl>
-            </div>
-            <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
-              <button type="submit" class="
-                    inline-flex
-                    justify-center
-                    py-2
-                    px-4
-                    border border-transparent
-                    shadow-sm
-                    text-sm
-                    font-medium
-                    rounded-md
-                    text-white
-                    bg-indigo-600
-                    hover:bg-indigo-700
-                    focus:outline-none
-                    focus:ring-2
-                    focus:ring-offset-2
-                    focus:ring-indigo-500
-                  ">
-                Proceed for payment
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
+<center>
+  <h1>PAYMENT DETAILS</h1>
+  <form action="https://secure.payu.in/_payment" name="payuform" method=POST>
+    <input type="hidden" name="key" value="<?php echo $MERCHANT_KEY; ?>" />
+    <input type="hidden" name="hash" value="<?php echo $hash; ?>" />
+    <input type="hidden" name="txnid" value="<?php echo $txnid; ?>" />
+    <table>
+      <tr>
+        <td>Full Name: </td>
+        <td><input colspan="5" name="firstname" id="firstname" value="Mihir Waykole" /></td>
+      </tr>
+      <tr>
+        <td>Email: </td>
+        <td><input colspan="5" name="email" id="email" value="mihirwaykole@gmail.com" /></td>
+      </tr>
+      <tr>
+        <td>Amount: </td>
+        <td><input colspan="5" name="amount" value="100" /></td>
+      </tr>
+      <tr>
+        <td>Product Info: </td>
+        <td colspan="5"><textarea name="productinfo">Help</textarea></td>
+      </tr>
+      <tr>
+        <td colspan="5"><input type="hidden" name="surl" size="64" value="" /></td>
+      </tr>
+      <tr>
+        <td colspan="5"><input type="hidden" name="furl" size="64" value="" /></td>
+      </tr>
+      <tr>
+        <td colspan="5"><input type="hidden" name="service_provider" value="" /></td>
+      </tr>
+      <tr class="sub">
+        <td colspan="5"><input type="submit" value="Submit" /></td>
+      </tr>
+    </table>
+  </form>
+</center>
 
 </html>

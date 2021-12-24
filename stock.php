@@ -45,17 +45,19 @@ if ($sch_no != "") {
     $payment_status = "NON PAID";
     $query = "INSERT INTO stock (name, email, sch_no, number, college, year, course, otp, payment_status)";
     $query .= "VALUES('{$name}', '{$email}','{$sch_no}', '{$number}', '{$college}', '{$year}', '{$course}', '{$otp}', '{$payment_status}')";
-    if (!$update_file) {
+    if (!$query) {
         echo "Failed";
         die("Failed to update " . mysqli_error($connection));
-    } elseif ($update_file) {
+    } elseif ($query) {
         echo "You are sucessfully registered";
 ?>
         <script>
             swal("Good job!", "You are sucessfully registered", "success")
         </script>
 <?php
-        //to payment gateway
+        $_SESSION['name'] = $name;
+        $_SESSION['email'] = $email;
+        header("Location: payment/payment.php");
     }
 }
 ?>

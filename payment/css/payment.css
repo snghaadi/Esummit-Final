@@ -1,0 +1,48 @@
+body {
+    height: 95vh;
+    background: url("../images/payment.bg.png") no-repeat center center/cover;
+    opacity: 1;
+}
+
+h1 {
+    padding-top: 10vh;
+    font-size: 52px;
+    color: black;
+}
+
+table {
+    font-size: 28px;
+    color: black;
+    font-weight: 500;
+}
+
+table input,
+table textarea {
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+table .sub {
+    text-align: center;
+    padding-left: 20px;
+    border: 10px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+table .sub input {
+    padding: 6px 20px;
+    border-radius: 20px;
+}
+
+table .sub input:hover {
+    background: black;
+    color: white;
+    border: none;
+}
