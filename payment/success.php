@@ -3,18 +3,21 @@ include '../include/db.php';
 session_start();
 $name = $_GET['name'];
 $email = $_GET['email'];
+$code = $_GET['code'];
 ?>
 
-<?php require __DIR__ . '../mailconf.php'; ?>
+<?php require __DIR__ . '/mailconf.php'; ?>
 
 <?php
-$sql = "UPDATE stock SET payment_status='PAID' WHERE name LIKE $name AND email LIKE $email";
+$sql = "UPDATE stock SET payment_status='PAID' WHERE code LIKE $code";
 if ($connection->query($sql) === TRUE) {
     $sub = "NO REPLY - PAYMENT SUCCESSFUL";
     $msg = "
         Mr/Ms. $name,
         <br>
-        You have been successfully registered.
+        Congratulations! You have been successfully registered for Stock Workshop + Simulation Games.
+        <br>
+        For any query, contact us at : +91-8957946660
         <br>
         Regards,
         <br>
@@ -28,6 +31,8 @@ if ($connection->query($sql) === TRUE) {
         Mr/Ms. $name,
         <br>
         If you have recieved this mail, that means we have received your amount but you have not been registered due to some server error.
+        <br>
+        Contact Us At : +91-8957946660
         <br>
         Regards,
         <br>

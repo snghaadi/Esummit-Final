@@ -22,10 +22,11 @@ $SALT = "VtJ2cMfmZJ0hmVWtIVJmCDEJl5nLcXZ7";
 $txnid = bin2hex(random_bytes(20));
 $name = $_SESSION['name'];
 $email = $_SESSION['email'];
-$amount = 10;
+$code = $_SESSION['code'];
+$amount = 2;
 $productInfo = "Payment for Stock Workshop + Simulation Game";
-$surl = "http://localhost/Esummit-Final/payment/success.php?name=$name&email=$email"; //success URL
-$furl = "http://localhost/Esummit-Final/payment/success.php?name=$name&email=$email"; //failure URL
+$surl = "http://localhost/Esummit-Final/payment/success.php?name=$name&email=$email&code=$code"; //success URL
+$furl = "http://localhost/Esummit-Final/paymentfailure.php?name=$name&email=$email&code=$code"; //failure URL
 
 
 // Merchant Salt as provided by Payu
