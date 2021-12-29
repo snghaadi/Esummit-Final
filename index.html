@@ -177,6 +177,42 @@
         </div>
     </div>
 
+    <div class="counter-section">
+        <div class="wrapper-box">
+            <div class="counter-div">
+                <div class="countbox">
+                    <i class="fas fa-microphone fa-2x"></i>
+                    <div style="display: flex; justify-content: center; align-items: center;"><h2 class=" " id="timer1">1</h2> <h3>+</h3></div>
+                    
+                     <p class=" ">Speakers</p>
+                  </div>
+              
+                  <div class="countbox">
+                    <i class="fas fa-calendar-alt fa-2x"></i>
+                    <div style="display: flex; justify-content: center; align-items: center;"><h2 class=" " id="timer2">1</h2> <h3>+</h3></div>
+      
+                    <p class=" ">Events and Workshops</p>
+                  </div>
+            </div>
+        
+            <div class="counter-div">
+                <div class="countbox">
+                    <i class="fas fa-award fa-2x"></i>
+                    <div style="display: flex; justify-content: center; align-items: center;"><h2 class=" " id="timer3">1</h2> <h3>+</h3></div>
+      
+                    <p class=" ">worth prizes</p>
+                  </div>
+              
+                  <div class="countbox">
+                    <i class="fas fa-calendar fa-2x"></i>
+                    <div style="display: flex; justify-content: center; align-items: center;"><h2 class=" " id="timer4">1</h2> <h3>+</h3></div>
+      
+                    <p class=" ">Days</p>
+                  </div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="join_ev_area padding-top-110 padding-bottom-90" id="event">
         <div class="jshapes">
@@ -1266,7 +1302,7 @@
                         </div>
                         <div class="col-lg-2 col-md-6 col-sm-6 col-12 wow fadeInUp" data-wow-delay=".4s">
                             <div class="foo-widget">
-                                <h4 class="margin-bottom-20">usefull links</h4>
+                                <h4 class="margin-bottom-20">links</h4>
                                 <ul>
                                     <li><a href="#about"><i class="far fa-angle-double-right"></i> About Us</a> </li>
                                     <li><a href="#speaker"><i class="far fa-angle-double-right"></i> Speakers</a> </li>
@@ -1359,7 +1395,66 @@
     <script src="assets/js/home.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src=""></script>
+    <script>
+         a=document.getElementById("hi")
+    i=0;
+    j=0;
+    k=0;
+    l=0;
+    function timer(){
+        timer1.innerHTML = `<h1>${i}</h1>`;
+        
+        if(i >= 15) return null;
+        i++
+        console.log(i)
+        
+        
+    }
+    if(i<15)
+    {
+        setInterval(timer, 200);
+    }   
+    function timer5(){
+        timer2.innerHTML = `<h1>${j}</h1>`;
+        
+        if(j >= 10) return null;
+        j++
+        console.log(j)
+        
+        
+    }
+    if(j<10)
+    {
+        setInterval(timer5, 200);
+    }      
+    function timer6(){
+        timer3.innerHTML = `<h1>${k}</h1>`;
+        
+        if(k >= 50000000) return null;
+        k=k+100000
+        console.log(i)
+        
+        
+    }
+    if(k<50000000)
+    {
+        setInterval(timer6, 2);
+    }  
+    
+    function timer7(){
+        timer4.innerHTML = `<h1>${l}</h1>`;
+        
+        if(l >= 90) return null;
+        l++
+        console.log(i)
+        
+        
+    }
+    if(l<90)
+    {
+        setInterval(timer7, 50);
+    }  
+    </script>
 </body>
 
 </html>
