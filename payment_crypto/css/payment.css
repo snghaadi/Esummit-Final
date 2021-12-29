@@ -1,0 +1,50 @@
+body {
+    height: 100vh;
+    background: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3)), url("https://www.rtechcenters.com/wp-content/uploads/2017/11/payment-bg.jpg");
+    opacity: 1;
+}
+
+h1 {
+    padding-top: 10vh;
+    font-size: 52px;
+    color: white;
+}
+
+table {
+    font-size: 28px;
+    color: white;
+    font-weight: 500;
+}
+
+table input,
+table textarea {
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 20px;
+    border-top: none;
+    border-left: none;
+    outline: none;
+    border-right: none;
+}
+
+table .sub {
+    text-align: center;
+    cursor: pointer;
+    padding-left: 20px;
+    border: 10px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+table .sub input {
+    padding: 6px 20px;
+    border-radius: 20px;
+}
+
+table .sub input:hover {
+    background: black;
+    color: white;
+    border: none;
+}
