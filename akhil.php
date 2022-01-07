@@ -32,7 +32,7 @@
             <script>swal("Good job!", "You are sucessfully registered", "success")
             </script>
             <?php
-            header("refresh:1;url=workshop.html");
+            header("refresh:1;url=akhilendra.html");
         }
     // }
 ?>
