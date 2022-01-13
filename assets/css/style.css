@@ -5348,3 +5348,56 @@ nav .main-menu2 li a::before {
 .blog-single-wrapper .blog-comment-area .single-comment .comment-content .reply:hover {
   color: #c1272d;
 }
+
+
+.border-rot img{
+  border-radius: 50%!important;
+  transition: all 5s;
+}
+.border-rot::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;  
+    background: linear-gradient(#00ccff,#d400d4);
+    z-index: -50;
+    border-radius: 50%;
+    animation: anim 4s infinite linear;
+    transition: all 0.8s ease-out;
+}
+
+@keyframes anim {
+  100%{
+    transform: rotate(-360deg);
+  }
+}
+.border-rot:hover::before{
+    opacity: 0.6;
+    border-radius: 15px;
+    animation: none;
+}
+.trans{
+  transition: all 1s linear;
+}
+.border-rot:hover div.m{
+  width: 300px;
+  height: 300px;
+  display: flex!important;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column ;
+  color: white;
+}
+.border-rot:hover .trans{
+  transition: all 1s linear;
+  transform: translateY(-100px);
+}
+.border-rot:hover img{
+  width: 0px;
+  display: none;
+}
+.m span{
+  font-weight: bolder;
+  font-size: 1.8rem;
+}
