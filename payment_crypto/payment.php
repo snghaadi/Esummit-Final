@@ -10,7 +10,7 @@ session_start();
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>E-Summit 2022 | E-Cell NITB</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/payment.css" />
 </head>
@@ -23,10 +23,10 @@ $txnid = bin2hex(random_bytes(20));
 $name = $_SESSION['name'];
 $email = $_SESSION['email'];
 $code = $_SESSION['code'];
-$amount = 2;
+$amount = 99;
 $productInfo = "Payment for Crypto Workshop + Simulation Game";
-$surl = "http://localhost/Esummit-Final/payment/success.php?name=$name&email=$email&code=$code"; //success URL
-$furl = "http://localhost/Esummit-Final/paymentfailure.php?name=$name&email=$email&code=$code"; //failure URL
+$surl = "https://esummit.ecellnitb.com/payment_crypto/success.php?name=$name&email=$email&code=$code"; //success URL
+$furl = "https://esummit.ecellnitb.com/payment_crypto/failure.php?name=$name&email=$email&code=$code"; //failure URL
 
 
 // Merchant Salt as provided by Payu

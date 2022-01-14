@@ -18,7 +18,7 @@ function sendmail($subject, $body, $address)
    $mail->Port = 465; // or 587
    $mail->IsHTML(true);
    $mail->Username = "support@notesnaka.com";
-   $mail->Password = "Utkarsh@3112";
+   $mail->Password = "Startup@2021";
    $mail->SetFrom("support@notesnaka.com");
    $mail->Subject = $subject;
    $mail->Body = $body;

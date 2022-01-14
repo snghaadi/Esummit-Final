@@ -24,13 +24,14 @@ $otp = $_SESSION['otp'];
         <img class="object-cover object-center rounded" alt="hero" src="img/otp.svg">
       </div>
       <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Didn't get the OTP ??</h1>
-        <p class="mb-8 leading-relaxed">Please upload a google drive link of your MANIT ID Card or Provisional Admit Card....We'll manually verify and send you an email</p>
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">For Freshers who didn't get the OTP !!</h1>
+        <p class="mb-8 leading-relaxed">Please upload a google drive link of your MANIT ID Card or Provisional ID Card or JOSSA/DASA Allotment Letter or anything which proves you are a MANITian....We'll manually verify...If you have any confusion contact us at</p>
+        <p>+91 8957946660</p>
         <p class="mb-8 leading-relaxed">Kindly make sure that the link is publicly shared :)</p>
         <div class="flex w-full md:justify-start justify-center items-end">
           <form method="post" action="">
             <div class="relative mr-4 lg:w-full xl:w-1/2 w-2/4">
-              <label for="hero-field" class="leading-7 text-sm font-bold text-gray-600">Admit Card Link</label>
+              <label for="hero-field" class="leading-7 text-sm font-bold text-gray-600">Google Drive Link</label>
               <input type="text" id="hero-field" placeholder="e.g. https://drive.google.com/file/d/16SZhkLXHv9A8ubVDMAo8Wl_HojSBPsRR/view?usp=sharing" name="link" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
             </div>
             <br>
@@ -41,6 +42,7 @@ $otp = $_SESSION['otp'];
       <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
         <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Please enter OTP</h1>
         <p class="mb-8 leading-relaxed">We have sent you OTP on <?php echo $sch_no ?>@manit.ac.in if you are facing problem with OTP please try again...</p>
+        <p class="mb-8 leading-relaxed">Login your schNo@manit.ac.in in Outlook.com to get the OTP :)</p>
         <div class="flex w-full md:justify-start justify-center items-end">
           <form method="post" action="">
             <div class="relative mr-4 lg:w-full xl:w-1/2 w-2/4">

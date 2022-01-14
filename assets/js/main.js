@@ -76,7 +76,7 @@ Version        : 1.0
             }
         });
 
-
+    
         // scroll To Top 
         $('.scrollup').on('click', function () {
             $("html").animate({
@@ -195,6 +195,9 @@ Version        : 1.0
 
 })(jQuery);
 
+
+var checkbox = document.getElementById('flexCheckDefault');
+var input = document.getElementById('manit-mail');
 
 $('#flexCheckDefault').click(function(){
     var checkBox = document.getElementById("flexCheckDefault");

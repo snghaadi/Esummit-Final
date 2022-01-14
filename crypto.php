@@ -44,7 +44,7 @@ if ($sch_no != "") {
             $_SESSION['sch_no'] = $sch_no;
             $_SESSION['otp'] = $otp;
             $_SESSION['code'] = $code;
-            header("Location: manit/otp.php");
+            header("Location: manit/otp_crypto.php");
         }
     }
 } else {

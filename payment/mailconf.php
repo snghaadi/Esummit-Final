@@ -17,9 +17,9 @@ function sendmail($subject, $body, $address)
    $mail->Host = "smtp.hostinger.com";
    $mail->Port = 465; // or 587
    $mail->IsHTML(true);
-   $mail->Username = "esummit@ecellnitb.com";
-   $mail->Password = "Teamecell2021";
-   $mail->SetFrom("esummit@ecellnitb.com");
+   $mail->Username = "support@notesnaka.com";
+   $mail->Password = "Startup@2021";
+   $mail->SetFrom("support@notesnaka.com");
    $mail->Subject = $subject;
    $mail->Body = $body;
    $mail->AddAddress($address);
