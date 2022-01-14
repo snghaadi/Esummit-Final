@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>E-Summit 2022 | E-Cell NITB</title>
+
+    <link rel="shortcut icon" href="assets/logo/logo.png">
+
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/icofont.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/improve.css">
+    <link rel="stylesheet" href="assets/css/test.css">
+    <link href="https://fonts.googleapis.com/css2?family=Recursive&family=Roboto&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <script defer
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js"
+    ></script>
+    <script defer>
+        function createRipple(event){
+        const button = event.currentTarget;
+        const circle = document.createElement("span");
+        const diameter = Math.max(button.clientWidth, button.clientHeight);
+        const radius = diameter / 2;
+        circle.style.width = circle.style.height = `${diameter}px`;
+        circle.style.left = `${event.clientX - button.offsetLeft - radius}px`;
+        circle.style.top = `${event.clientY - button.offsetTop - radius}px`;
+        circle.classList.add("ripple");
+        const ripple = button.getElementsByClassName("ripple")[0];
+        if (ripple) {
+            ripple.remove();
+        }
+        button.appendChild(circle);
+    }
+
+    const buttons = document.getElementsByTagName("button");
+    for (const button of buttons) {
+        button.addEventListener("click", createRipple);
+    }
+
+    </script>
+</head>
+<style>
+    .button-reg {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    @media(max-width:450px) {
+        .button-reg {
+            display: flex;
+            justify-content: center;
+            margin: -34px;
+            margin-bottom: 23px;
+
+
+        }
+
+        .padding-top-120 {
+            padding-top: 35px;
+        }
+
+
+    }
+</style>
+
+<body>
+
+    <!-- <div class="preloader">
+        <div class="loader"></div>
+    </div> -->
+
+
+    <header>
+        <div id="main-header" class="header-area">
+            <div class="sticky-header">
+                <div class="header-bottom position-relative">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-start justify-content-lg-between">
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                                <div class="logo">
+                                    <a href="#"> <img src="assets/img/logo/E-SUMMIT LOGO-min.png"
+                                            style="width: 120px;" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 d-none d-lg-block">
+                                <nav id="mobile-menu">
+                                    <ul class="main-menu">
+                                        <li>
+                                            <a href="index.html#home">home</a>
+                                        </li>
+                                        <li><a href="index.html#about">about</a></li>
+                                        <li><a href="index.html#event">events </a>
+                                        </li>
+                                        <li><a href="index.html#speaker">speakers </a>
+                                        </li>
+                                        <li><a href="index.html#schedule">schedule </a>
+                                        </li>
+                                        <li><a href="index.html#attend">why attend? </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!-- <div class="col-lg-2 col-md-6 col-sm-8 col-6">
+                                            <div class="header-btn text-center text-lg-end">
+                                                <a class="btn1" href="#">contact us</a>
+                                            </div>
+                                        </div> -->
+                        </div>
+                        <div class="mobile-menu"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- <div class="breadcrumb-area" style="background-image: url('assets/img/bg/page-title.jpg');">
+        <div class="container">
+            <div class="row justify-content-center">
+                <nav aria-label="breadcrumb">
+                    <h2 class="page-title">Technical Workshop</h2>
+                    <ol class="breadcrumb text-center">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Schedule Single</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="single-schedule-wrapper padding-top-120" style="padding-top: 41px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-12">
+                    <div class="single-schedule-left">
+
+                        <div class="ss-img-box wow fadeInUp">
+                            <img src="assets/Compressed/web baner hackthon.jpg" alt="">
+                        </div>
+
+                        <div class="counter-area counter-area2 padding-bottom-60">
+                            <div class="container">
+                                <div class="row justify-content-center" style="    margin-top: 50px;">
+                                    <div class="col-lg-9">
+                                        <div class="row counter_wrapper countdown">
+                                            <div class="col-6 col-sm-3">
+                                                <div class="single-counter">
+                                                    <h2 class="days">18</h2>
+                                                    <h6>days</h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-sm-3">
+                                                <div class="single-counter">
+                                                    <h2 class="hours">10</h2>
+                                                    <h6>hours</h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-sm-3">
+                                                <div class="single-counter">
+                                                    <h2 class="minutes">48</h2>
+                                                    <h6>minute</h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-sm-3">
+                                                <div class="single-counter">
+                                                    <h2 class="seconds">30</h2>
+                                                    <h6>second</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ss-content-box padding-bottom-60 wow fadeInUp">
+                            <div style="display: flex; width: 100%; flex-direction: row; align-items: center; justify-content: center;"><a href="#" style="color: white; margin-bottom: 25px;"><button>Register for Hackathon</button></a></div>
+                            <h2 class="margin-bottom-30">About</h2>
+                            <p>The participants are given 48 hours to develop a prototype and pitch it to judges, angel investors, and venture capitalists. 
+                                The goal of this is to encourage our hackers to explore the unconventional. By going away from the ordinary, participants will develop breakthroughs that will change the world for the better.
+                                
+                            </p>
+
+                            <!-- <a href="ticket.html" class="btn1 margin-top-30">Book now</a> -->
+                        </div>
+
+                        <div class="ss-content-box padding-bottom-60 wow fadeInUp">
+                            <h2 class="margin-bottom-30"> Eligibility</h2>
+                            <p>
+                                <span>
+The teams registering for the hackathon must meet the following criteria to be eligible for participation
+
+                                </span>
+                                <od style="list-style:decimal;">
+                                    <li>Every team must have at most 4 – 5 members</li>
+                                    <li>Every member of the team must be a college student.</li>
+                                </od>
+                            </p>
+                            <h2 class="margin-bottom-30"> Rules and regulation
+                            </h2>
+                            <p>
+                                <od>
+                                        <ol>
+                                            <li>Themes will be provided to all teams.</li>
+                                            <li>The team needs to pick up one theme and build upon it.</li>
+                                            <li>The solution can be related to any domain shared.</li>
+                                            <li>Team leaders must create a common GitHub repository, and all other team members will only push their code on that.</li>
+                                            <li>All team members must share their GitHub profile link with us, and team leaders must share their project repository.</li>
+                                            <li>Teams can take help from the internet if they are stuck, but they must use their creativity and skills to develop a unique solution.</li>
+                                            <li>Teams can use any framework or library at their convenience.</li>
+                                            <li>Plagiarism is strictly prohibited; the solution of all teams will be strictly monitored, and if found to be copied from other teams or a complete solution from the internet, they will be immediately disqualified.</li>
+                                            <li>After completing the project, it must be live (must be hosted on the internet, can use GitHub Pages or Heroku or any free services of cloud).</li>
+                                            <li>Teams must also create a PPT and report of their projects & will need to present their project along with the PPT on the day of final judgment</li>
+                                               <li>Teams must update their status of projects every 3 hrs in a common WhatsApp group. If they fail to do so, they will be contacted by Event Coordinators. If any team remains inactive for more than 6 hrs, then the team will be disqualified.</li>
+                                        </ol>
+                                </od>
+                            </p>
+                            <h2 class="margin-bottom-30"> Schedule</h2>
+                            <div class="cont">
+                                <div class="timeline">
+                                  <ul>
+                                    <li>
+                                      <div class="timeline-content">
+                                        <h3 class="date">18<sup>th</sup> to 27<sup>th</sup> January 2022 (10 days)</h3>
+                                        <h1>Registration</h1>
+                                        <p>A participant must register himself with team during interval of 18th to 27th January 2022.</p>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="timeline-content">
+                                        <h3 class="date">27<sup>th</sup> January to 6<sup>th</sup> February 2022 (10 days)</h3>
+                                        <h1>Idea Submission</h1>
+                                        <p>Team members must submit an idea based on the given theme. Accepted responses – PPT, Video, Animation etc. </p>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="timeline-content">
+                                        <h3 class="date">7<sup>th</sup> to 8<sup>th</sup> February 2022 (2 days)</h3>
+                                        <h1>Shortlisting Teams</h1>
+                                        <p>Team members review the submissions, and 20-40 teams are shortlisted. Meanwhile, participants will attend an interactive session/seminar/workshop by our title sponsors (if any).</p>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="timeline-content">
+                                        <h3 class="date">9<sup>th</sup> to 10<sup>th</sup> February 2022 (2 days)</h3>
+                                        <h1>Round 1 result Announcement</h1>
+                                        <p>Round 1 is announced, and WhatsApp groups are formed. The group consisting of participants along with 2 E-Cell Members and a mentor.</p>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="timeline-content">
+                                        <h3 class="date">11<sup>th</sup> February 2022</h3>
+                                        <h1>Rules and Regulations</h1>
+                                        <p>Welcome Meet hosted by E-Cell Team Members explaining rules and regulations about the hackathon.</p>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="timeline-content">
+                                        <h3 class="date">12<sup>th</sup> to 13<sup>th</sup> February 2022 (2 days)</h3>
+                                        <h1>Hackathon</h1>
+                                        <p>Participants will be given 2 days of time to design a prototype as desired for given probelm.</p>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="timeline-content">
+                                        <h3 class="date">14<sup>th</sup> to 15<sup>th</sup> February 2022(2 days)</h3>
+                                        <h1>Pitching Round</h1>
+                                        <p>Pitching round before judges panel.</p>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="timeline-content">
+                                        <h3 class="date">16<sup>th</sup> February 2022</h3>
+                                        <h1>Result Announced</h1>
+                                        <p>Final verdict of Hackathon will be announced</p>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+
+                              <h2 class="margin-bottom-30"> Hackathon rules for Participants</h2>
+                            <p>
+                                <od>
+                                    <!-- <li><b>Winner:</b> cash prize and goodies worth INR XXXX
+                                    </li>
+                                    <li><b>1st Runner Up:</b> cash prize and goodies worth INR XXXX
+
+                                    </li>
+                                    <li><b>2nd Runner Up:</b> cash prize and goodies worth INR XXXX
+                                    </li> -->
+
+                                    <li> <b>Registration Round :</b>
+                                        - The teams have to register and select a problem statement for them.
+                                        
+                                    </li>
+                                    <li> <b>Idea Submission :</b>
+                                        - The team members have to submit a ppt showcasing their idea to solve the problem statement
+                                        
+                                    </li>
+                                    
+                                    <li><b>Hacking Phase:</b>
+                                        <ol style="margin-left: 20px;">
+                                            <li>A Whatsapp group will be made containing participants along with 2 E-Cell Members and a mentor.</li>
+                                            <li>Hacking phase will be of 48 hours.</li>
+                                        </ol>
+                                        
+                                    </li>
+                                </od>
+                            </p>
+
+                              <h2 class="margin-bottom-30"> Tracks</h2>
+                            <p>
+                                <od>
+                                    <!-- <li><b>Winner:</b> cash prize and goodies worth INR XXXX
+                                    </li>
+                                    <li><b>1st Runner Up:</b> cash prize and goodies worth INR XXXX
+
+                                    </li>
+                                    <li><b>2nd Runner Up:</b> cash prize and goodies worth INR XXXX
+                                    </li> -->
+
+                                    <li> <b>Web Development : </b>
+                                        - Build web applications using the frameworks and tools
+                                    </li>
+                                    <li> <b>Mobile Development: </b>
+                                        - Develop interactive mobile applications for iOS or Android
+                                    </li>
+                                    <li> <b>Artificial Intelligence: </b>
+                                        - Implement machine learning concepts to solve tasks
+                                    </li>
+                                    <li> <b>Prototype designed must be User friendly.</b>
+                                        
+                                    </li>
+                                </od>
+                            </p>
+
+                            
+                            <h2 class="margin-bottom-30"> Prizes</h2>
+                            <p>
+                                <od>
+                                    <!-- <li><b>Winner:</b> cash prize and goodies worth INR XXXX
+                                    </li>
+                                    <li><b>1st Runner Up:</b> cash prize and goodies worth INR XXXX
+
+                                    </li>
+                                    <li><b>2nd Runner Up:</b> cash prize and goodies worth INR XXXX
+                                    </li> -->
+
+                                    <li> <b>Cash Prices:</b>
+                                        <ol style="margin-left: 20px;">
+                                            <li>Lorem, ipsum.</li>
+                                            <li>Lorem, ipsum.</li>
+                                        </ol>
+                                        
+                                    </li>
+                                    <li> <b>Course by mentors, judges or any of our sponsors:</b>
+                                        <ol style="margin-left: 20px;">
+                                            <li>Lorem, ipsum.</li>
+                                            <li>Lorem, ipsum.</li>
+                                            <li>Lorem, ipsum.</li>
+                                        </ol>
+                                        
+                                    </li>
+                                    
+                                    <li><b>Merchandise:</b>
+                                        <ol style="margin-left: 20px;">
+                                            <li>Lorem, ipsum.</li>
+                                            <li>Lorem, ipsum.</li>
+                                        </ol>
+                                        
+                                    </li>
+                                    
+                                    <li> <b>Certificate of Appreciation:</b>
+                                        <ol style="margin-left: 20px;">
+                                            <li>Lorem, ipsum.</li>
+                                            <li>Lorem, ipsum.</li>
+                                        </ol>
+                                        
+                                    </li>
+                                </od>
+                            </p>
+
+                            <h2 class="margin-bottom-30"> Evaluation Criteria </h2>
+                            <p>
+                                <od>
+                                    <li>Economic, environmental and social impact</li>
+                                    <li>Value proposition</li>
+                                    <li>Problem-solving</li>
+                                    <li>Clear walkthrough of solution with technicalities</li>
+                                    <li>Vision and team</li>
+                                    <li>Features</li>
+                                    <li>Presentation</li>
+                                    <li>Personal experience of the Mentors/Judges</li>
+                                    <li>UI & UX</li>
+                                    <li>Innovation and Creativity</li>
+                                    <li>Opportunities and barriers in the market</li>
+                                    <li>Scalability</li>
+
+
+                                </od>
+                            </p>
+
+                            <!-- <a href="ticket.html" class="btn1 margin-top-30">Book now</a> -->
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- <div class="col-lg-3 col-12">
+                    <div class="single-schedule-right">
+
+                        <div class="col-lg-12 col-md-6 col-sm-6 col-12 wow fadeInUp">
+
+                            <div class="single-sidebar speaker-info">
+                                <div class="img-box">
+                                    <img src="assets/Compressed/akl.jfif" alt="">
+                                </div>
+                                <div class="cont-box">
+                                    <h4><a href="akhilendra.html">Akhilendra Rai</a></h4>
+                                    <h6 class="margin-top-10">8 January 2022</h6>
+                                    <div class="social-icons text-center text-md-right margin-top-10">
+                                        <a href="https://www.linkedin.com/in/akhilendra-rai-59277a166/"> <span
+                                                class="active"> <i class="fab fa-linkedin-in"></i></span></a>
+                                        <a href="#"> <span><i class="fab fa-facebook-f"></i> </span></a>
+                                        <a href="#"> <span> <i class="fab fa-twitter"></i></span> </a>
+                                        <a href="#"> <span><i class="fab fa-pinterest-p"></i>
+                                            </span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="single-schedule-right">
+
+                        <div class="col-lg-12 col-md-6 col-sm-6 col-12 wow fadeInUp">
+
+                            <div class="single-sidebar speaker-info">
+                                <div class="img-box">
+                                    <img src="assets/Compressed/data-science-icon.png" alt="">
+                                </div>
+                                <div class="cont-box">
+                                    <h4><a href="#">Data Science</a></h4>
+                                    <h6 class="margin-top-10">12 December 2021</h6>
+                                     <div class="social-icons text-center text-md-right margin-top-10">
+                                        <a href="#"> <span class="active"> <i class="fab fa-linkedin-in"></i></span></a>
+                                        <a href="#"> <span><i class="fab fa-facebook-f"></i> </span></a>
+                                        <a href="#"> <span> <i class="fab fa-twitter"></i></span> </a>
+                                        <a href="#"> <span><i class="fab fa-pinterest-p"></i>
+                                            </span></a>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+
+               <div class="single-schedule-right">
+
+                        <div class="col-lg-12 col-md-6 col-sm-6 col-12 wow fadeInUp">
+
+                            <div class="single-sidebar speaker-info">
+                                <div class="img-box">
+                                    <img src="assets/Compressed/coming-soon.png" alt="">
+                                </div>
+                                <div class="cont-box">
+                                    <h4><a href="#">More to we announce soon</a></h4>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+        <!-- <h2 style="text-align: center;">FAQ's</h2>
+    <section class="p-4 d-flex justify-content-center w-100" style="border-radius: .5rem .5rem 0 0; background-color:#fbfbfb;">
+        <div class="accordion w-100" id="basicAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#basicAccordionCollapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Question #1
+              </button>
+            </h2>
+            <div id="basicAccordionCollapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#basicAccordion" style="">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vel, accusantium, dolorem tempora excepturi veniam nihil, nulla in quidem fugit odio amet doloribus officiis tenetur?
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#basicAccordionCollapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Question #2
+              </button>
+            </h2>
+            <div id="basicAccordionCollapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-mdb-parent="#basicAccordion" style="">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod velit deserunt delectus iusto repellendus saepe harum aperiam placeat veniam itaque, quidem explicabo exercitationem neque! Incidunt doloribus, odio fugiat, sit ratione veniam aliquam eaque similique quibusdam obcaecati iusto excepturi culpa tempora. Eaque quidem vero in pariatur quasi sapiente id incidunt quos.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#basicAccordionCollapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Question #3
+              </button>
+            </h2>
+            <div id="basicAccordionCollapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-mdb-parent="#basicAccordion" style="">
+              <div class="accordion-body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores ad aspernatur corporis molestiae fugiat voluptatibus atque doloribus repellat nisi non, dolorem nesciunt dignissimos! Iure voluptatum voluptas eius repellendus molestias eos exercitationem libero voluptate enim quia fugiat temporibus sint, dolore officia!
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+    <div class="brand-area padding-top-110 padding-bottom-90" style="padding: 35px 0px;">
+        <div class="container">
+            <div class="row justify-content-center margin-bottom-20">
+                <div class="col-lg-6 wow fadeInUp">
+                    <div class="common-title2 text-center">
+                        <h5>sponsor</h5>
+                        <h2>meet our <span>sponsor</span></h2>
+                        <p class="margin-top-20" style="text-align: center;">
+                            E-Cell NIT-B sincerely appreciates your support for our mission to incline the nation towards an entrepreneurial India.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-2 col-md-6 col-sm-6 col-12 wow zoomIn" data-wow-delay=".2s">
+                    <div class="single-brand">
+                        <img src="assets/Compressed/ninja.png"  alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-12 wow zoomIn" data-wow-delay=".2s">
+                    <div class="single-brand">
+                        <img src="https://www.nextbigbrand.in/wp-content/uploads/2021/10/Coding-Minutes-Logo.png"  alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-12 wow zoomIn" data-wow-delay=".4s">
+                    <div class="single-brand">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="76.533" height="39.026" viewBox="0 0 76.533 39.026"><path d="M2380.7 6597.866a12.252 12.252.0 00-.261-1.513l-30.726-.027a12.545 12.545.0 01.908-3.443 12.337 12.337.0 012.739-4.044 12.151 12.151.0 014.018-2.581 12.634 12.634.0 0114.3 3.051l4.852-4.748a18.176 18.176.0 00-6.131-4.331 20.037 20.037.0 00-8.112-1.564 20.25 20.25.0 00-7.671 1.459 19.158 19.158.0 00-6.261 4.07 19.584 19.584.0 00-4.226 6.184 18.7 18.7.0 00-1.487 5.947h-.2a18.674 18.674.0 00-1.489-5.947 19.544 19.544.0 00-4.226-6.184 19.133 19.133.0 00-6.261-4.07 21.354 21.354.0 00-15.783.1 18.2 18.2.0 00-6.131 4.331l4.853 4.748a13.264 13.264.0 0114.3-3.051 12.131 12.131.0 014.017 2.581 12.323 12.323.0 012.74 4.044 12.527 12.527.0 01.908 3.443l-30.726.027a12.256 12.256.0 00-.261 1.513 15 15 0 00-.1 1.773 20.713 20.713.0 001.1 6.783 15.709 15.709.0 003.443 5.686 17.309 17.309.0 006 4.123 20.587 20.587.0 007.983 1.46 20.226 20.226.0 007.669-1.46 19.086 19.086.0 006.261-4.07 19.506 19.506.0 004.226-6.184 18.163 18.163.0 001.153-3.629h.871a18.27 18.27.0 001.151 3.629 19.545 19.545.0 004.226 6.184 19.111 19.111.0 006.261 4.07 20.241 20.241.0 007.671 1.46 20.572 20.572.0 007.981-1.46 17.282 17.282.0 006-4.123 15.717 15.717.0 003.445-5.686 20.726 20.726.0 001.1-6.783A15.259 15.259.0 002380.7 6597.866zm-46.245 5.608a12.1 12.1.0 01-2.766 4.043 12.467 12.467.0 01-4.043 2.583 14.378 14.378.0 01-9.939.052 11.776 11.776.0 01-3.522-2.218 8.459 8.459.0 01-1.8-2.374 13.476 13.476.0 01-1.173-3.208h23.658A11.487 11.487.0 012334.457 6603.475zm38.236 2.086a8.466 8.466.0 01-1.8 2.374 11.771 11.771.0 01-3.522 2.218 14.378 14.378.0 01-9.939-.052 12.491 12.491.0 01-4.044-2.583 12.088 12.088.0 01-2.765-4.043 11.427 11.427.0 01-.415-1.126h11.92v0h11.739A13.509 13.509.0 012372.692 6605.561z" transform="translate(-2304.273 -6578.666)" fill="#2f8d46"></path></svg>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-12 wow zoomIn" data-wow-delay=".2s">
+                    <div class="single-brand">
+                        <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/navbar/logoPrepBytes.svg"  alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-12 wow zoomIn" data-wow-delay=".2s">
+                    <div class="single-brand">
+                        <img src="https://codingblocks.com/assets/images/cb/cb_grey_small.png"  alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="subs-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7 col-xl-6 col-12 wow fadeInLeft">
+                            <div class="subs-content">
+                                <h2>subscribe our newsletter</h2>
+                                <p>Sign up to get the first-mover advantage on all announcements and updates on the events by E-Cell NIT-B..</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-xl-6 col-12 wow fadeInRight">
+                            <div class="subs-form">
+                                <form action="#">
+                                    <input type="email" placeholder="Enter your email address">
+                                    <button type="submit">subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-area">
+            <div class="foo_top padding-top-120 padding-bottom-65">
+                <div class="foo_top_shapes">
+                    <img src="assets/img/shape/fo_vec1.png" alt="" class="shp_1">
+                </div>
+                <div class="container position-relative">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 wow fadeInUp" data-wow-delay=".2s">
+                            <div class="foo-widget">
+                                <div class="logo">
+                                    <a href="#"> <img src="assets/img/logo/E-SUMMIT LOGO-min.png"
+                                            style="height: 80px;width: 155px;" alt=""></a>
+                                </div>
+                                <p>
+                                    Entrepreneurship Cell NIT Bhopal is a non-profit student organization that works to
+                                    support and unleash the budding
+                                    entrepreneurial minds and promote the start-up culture among the students.
+                                </p>
+                                <div class="social-links">
+                                    <a href="https://www.facebook.com/ecellnitbhopal/"><span><i
+                                                class="icofont-facebook"></i></span></a>
+                                    <a href="https://www.linkedin.com/company/ecell-manit"><span class="active"><i
+                                                class="fab fa-linkedin-in"></i></span></a>
+                                    <a href="https://twitter.com/ecell_nitb"><span><i
+                                                class="icofont-twitter"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-sm-6 col-12 wow fadeInUp" data-wow-delay=".4s">
+                            <div class="foo-widget">
+                                <h4 class="margin-bottom-20">Usefull links</h4>
+                                <ul>
+                                    <li><a href="index.html#about"><i class="far fa-angle-double-right"></i> About
+                                            Us</a> </li>
+                                    <li><a href="index.html#speaker"><i class="far fa-angle-double-right"></i>
+                                            Speakers</a> </li>
+                                    <li><a href="index.html#schedule"><i class="far fa-angle-double-right"></i>
+                                            Schedule</a> </li>
+                                    <li><a href="index.html#event"><i class="far fa-angle-double-right"></i> Events</a>
+                                        <!-- <li><a href="#"><i class="far fa-angle-double-right"></i> Contact Us</a> -->
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12 wow fadeInUp" data-wow-delay=".6s">
+                            <div class="foo-widget">
+                                <h4 class="margin-bottom-20">contact us</h4>
+                                <ul>
+                                    <li>
+                                        <span><i class="far fa-clock"></i></span> 10:00 - 22:00, E-Cell MANIT
+                                    </li>
+                                    <li>
+                                        <span><i class="far fa-phone"></i></span> <a href="tel:+91 8957946660">+91 89579
+                                            46660</a>
+                                    </li>
+                                    <li>
+                                        <span><i class="far fa-envelope"></i></span> <a
+                                            href="mailto:esummit@ecellnitb.com"
+                                            class="__cf_email__">esummit@ecellnitb.com</a>
+                                    </li>
+                                    <li>
+                                        <span><i class="far fa-map-marker-alt"></i></span>
+                                        Maulana Azad National Institute of Technology, Bhopal, India
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12 wow fadeInUp" data-wow-delay=".8s">
+                            <div class="foo-widget">
+                                <h4 class="margin-bottom-20">Instagram Feed</h4>
+                                <div class="foo-gal-wrapper">
+                                    <div class="single-gal">
+                                        <a href="#"><img src="assets/img/instagram/1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="single-gal">
+                                        <a href="#"><img src="assets/img/instagram/2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="single-gal">
+                                        <a href="#"><img src="assets/img/instagram/3.jpg" alt=""></a>
+                                    </div>
+                                    <div class="single-gal">
+                                        <a href="#"><img src="assets/img/instagram/4.jpg" alt=""></a>
+                                    </div>
+                                    <div class="single-gal">
+                                        <a href="#"><img src="assets/img/instagram/5.jpg" alt=""></a>
+                                    </div>
+                                    <div class="single-gal">
+                                        <a href="#"><img src="assets/img/instagram/6.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="foo_btm">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12">
+                            <div class="copyright-text">
+                                <span> &copy; copyright 2021-22 <a href="#"><b>E-Cell NITB</b></a> All Rights
+                                    Reserved.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+
+
+
+    <div class="scrollup"><i class="fas fa-arrow-up"></i></div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/counterup.min.js"></script>
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/easing.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/expo.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+</body>
+
+</html>
