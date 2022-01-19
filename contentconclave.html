@@ -20,6 +20,32 @@
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/improve.css">
+    <link rel="stylesheet" href="assets/css/test.css">
+    <script defer type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js"></script>
+    <script defer>
+        function createRipple(event) {
+            const button = event.currentTarget;
+            const circle = document.createElement("span");
+            const diameter = Math.max(button.clientWidth, button.clientHeight);
+            const radius = diameter / 2;
+            circle.style.width = circle.style.height = `${diameter}px`;
+            circle.style.left = `${event.clientX - button.offsetLeft - radius}px`;
+            circle.style.top = `${event.clientY - button.offsetTop - radius}px`;
+            circle.classList.add("ripple");
+            const ripple = button.getElementsByClassName("ripple")[0];
+            if (ripple) {
+                ripple.remove();
+            }
+            button.appendChild(circle);
+        }
+
+        const buttons = document.getElementsByTagName("button");
+        for (const button of buttons) {
+            button.addEventListener("click", createRipple);
+        }
+
+    </script>
 
 </head>
 <style>
@@ -115,7 +141,7 @@
         </div>
     </div> -->
 
-    <div class="single-schedule-wrapper padding-top-120" style="padding-top: 41px;">
+    <div class="single-schedule-wrapper padding-top-120" style="padding-top: 41px; padding-bottom: 0px;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-9 col-12">
@@ -160,7 +186,119 @@
                             </div>
                         </div>
 
+                        <div class="ss-content-box padding-bottom-60 wow fadeInUp">
+                             <div class="btn_wrapper margin-top-30 button-reg" style="padding: 10px 10px;">
+                                <a href="#form-reg" class="btn1">Register for Content Conclave</a>
+                                 <!-- <a href="#" class="btn2">contact now</a> -->
+                            </div> 
+                            <h2 class="margin-bottom-30">About</h2>
+                            <p>Content Conclave is a fun event aimed at introducing Content as a Product. Eminent social
+                                personalities like Tech Vlogger, Moto Vlogger, Marvel Studio Creatives, Travel Vlogger,
+                                Food Vlogger and many more. The Creators will share their journey and also advise the
+                                budding creators while answering their doubts. This live interactive session will cover
+                                topics like Vlogging, Tools of Social Media Marketing, Algorithms of the Social Media ,
+                                Strategies and more. The content that they produce will bring eternity to life. This
+                                event trains the students through a series of sessions that focus on creatively
+                                promoting companies and goods. During the pandemic, we have seen a mainstream growth in
+                                digital marketing with many products finding their audience online. The event comprises
+                                many activities on promotion of brands in an unconventional way.
 
+                            </p>
+
+                            <!-- <a href="ticket.html" class="btn1 margin-top-30">Book now</a> -->
+                        </div>
+
+                        <!-- <div class="ss-content-box padding-bottom-60 wow fadeInUp">
+                            <h2 class="margin-bottom-30">About Speakers</h2>
+
+                            <h2 class="margin-top-30 font-head">WANDERERS HUB (28 January 2022 || 5:30 PM to 6:30 PM)</h2>
+                            <p>
+                                The Travel Vloggers, Prerna and Harsh, take you to different places along with them while you are sitting at your home. Their diverse content has given them a huge following of more than 4.75 Million YouTube Subscribers. This is the place for a real wanderer.
+                            </p>
+
+                            <h2 class="margin-top-30 font-head">ROYAL JORDANIAN (28 January 2022 || 7:30 PM to 8:30 PM)</h2>
+                            <p>
+                                The Mysterious MotoVlogger has his own fan base of 1.5 Million YouTube subscribers for the content he provides. Royal Jordanian lives by only one rule- “Riding a bike is my relief, my medicine, in this crazy world”.
+                            </p>
+                            <h2 class="margin-top-30 font-head">MYFOODPROJECT (29 January 2022 || 11:00 AM to 12:00 PM)
+                            </h2>
+                            <p>
+                                Ranked #3 Food Blogger in India, Shagun Malhotra is an eminent digital creator who reviews food and uploads new recipes. Shagun gathered a community of 219k+ food lovers on Instagram. Her genuine review and unique recipes are one to watch out for.
+                            </p>
+
+                            <h2 class="margin-top-30 font-head">FOOD_LUNATIC (29 January 2022 || 2:00 PM to 3:00 PM)</h2>
+                            <p>
+                                As the name suggests, Dimple Arora is a huge food lunatic. Her videos get you all craving for amazing food. The Instagram community loves her for her fun approach towards life and especially food!
+                            </p>
+
+                            
+                            <h2 class="margin-top-30 font-head">TRAVELING MONDAYS (29 January 2022 || 5:00 PM to 6:00 PM)</h2>
+                            <p>
+                                Known for his cinematic vlogs and amazing storytelling, Shakti Singh Shekhawat is a well-known travel vlogger. He has amassed over 430k+ subscribers on YouTube. Shakti traps all his memories and travelling diaries in his videos which live for eternity.
+                            </p>
+
+                            <h2 class="margin-top-30 font-head">TRAKIN TECH (28 January 2022 || 5:30 PM to 6:30 PM)</h2>
+                            <p>
+                                Trakin Tech is a multilingual Tech Creator. If you are a tech enthusiast, you must have come across his name. The humongous 10.7 Million+ YouTube community awaits for his unboxing, reviews and news on Tech Gadgets. He also creates content on the automobile industry.
+                            </p> 
+
+                            
+                        </div> -->
+                        <h2 class="margin-bottom-30"> Schedule</h2>
+                        <div class="cont">
+                            <div class="timeline">
+                                <ul>
+                                    <li>
+                                        <div class="timeline-content">
+                                            <h3 class="date">28<sup>th</sup>January 2022 at 5:30PM
+                                                </h3>
+                                            <h1>WANDERERS HUB</h1>
+                                            <p>The Travel Vloggers, Prerna and Harsh, take you to different places along with them while you are sitting at your home. Their diverse content has given them a huge following of more than 4.75 Million YouTube Subscribers. This is the place for a real wanderer.
+                                            </p>
+                                            <!-- <p>Links will be updated soon</p> -->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="timeline-content">
+                                            <h3 class="date">28<sup>th</sup> January 2022 at 7:30PM
+                                                </h3>
+                                            <h1>ROYAL JORDANIAN</h1>
+                                            <p> The Mysterious MotoVlogger has his own fan base of 1.5 Million YouTube subscribers for the content he provides. Royal Jordanian lives by only one rule- “Riding a bike is my relief, my medicine, in this crazy world”.</p>
+                                            <!-- <p>Team members must choose any one problem statement and must submit an
+                                                idea based on the given theme.</p>
+                                            <p> Accepted
+                                                responses – PPT, Video, Animation etc. </p> -->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="timeline-content">
+                                            <h3 class="date">29<sup>th</sup> February 2022 at 11:00AM
+                                               </h3>
+                                            <h1>MYFOODPROJECT</h1>
+                                            <p> Ranked #3 Food Blogger in India, Shagun Malhotra is an eminent digital creator who reviews food and uploads new recipes. Shagun gathered a community of 219k+ food lovers on Instagram. Her genuine review and unique recipes are one to watch out for.
+                                            </p>
+                                            
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="timeline-content">
+                                            <h3 class="date">29<sup>th</sup> February 2022 at 2:00PM</h3>
+                                            <h1>FOOD_LUNATIC</h1>
+                                            <p>As the name suggests, Dimple Arora is a huge food lunatic. Her videos get you all craving for amazing food. The Instagram community loves her for her fun approach towards life and especially food!</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="timeline-content">
+                                            <h3 class="date">29<sup>th</sup>  February 2022 at 5:00PM
+                                               </h3>
+                                            <h1>TRAVELING MONDAYS</h1>
+                                            <p>Known for his cinematic vlogs and amazing storytelling, Shakti Singh Shekhawat is a well-known travel vlogger. He has amassed over 430k+ subscribers on YouTube. Shakti traps all his memories and travelling diaries in his videos which live for eternity.</p>
+                                        </div>
+                                    </li>
+                                
+                                </ul>
+                            </div>
+                        </div>
 
 
 
@@ -168,68 +306,202 @@
                 </div>
 
 
-                <!-- <div class="col-lg-3 col-12">
-                    <div class="single-schedule-right">
-
-                        <div class="col-lg-12 col-md-6 col-sm-6 col-12 wow fadeInUp">
-
-                            <div class="single-sidebar speaker-info">
-                                <div class="img-box">
-                                    <img src="assets/Compressed/akl.jfif" alt="">
-                                </div>
-                                <div class="cont-box">
-                                    <h4><a href="akhilendra.html">Akhilendra Rai</a></h4>
-                                    <h6 class="margin-top-10">8 January 2022</h6>
-                                    <div class="social-icons text-center text-md-right margin-top-10">
-                                        <a href="https://www.linkedin.com/in/akhilendra-rai-59277a166/"> <span
-                                                class="active"> <i class="fab fa-linkedin-in"></i></span></a>
-                                        <a href="#"> <span><i class="fab fa-facebook-f"></i> </span></a>
-                                        <a href="#"> <span> <i class="fab fa-twitter"></i></span> </a>
-                                        <a href="#"> <span><i class="fab fa-pinterest-p"></i>
-                                            </span></a>
+                <div class="col-lg-3 col-12">
+                    <div class="container" style="padding:0px">
+                       
+                        <div class="column " style="justify-content: center;">
+            
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 wow zoomIn" data-wow-delay=".2s" style="width: 100%;">
+            
+                                <div class="single-speaker-2 active" >
+                                    <div class="box">
+                                        <div class="img-box border-rot">
+                                            <img style="padding: 6px;" src="assets/Compressed/prerna and harsh.jpg" alt="">
+                                            <div class="m" style="display: none;">
+                                                <div class="flex trans">
+                                                    <h4 style="color: white;">Youtube Subscribers </h4>
+                                                    <div style="display: flex; flex-direction: row;">
+                                                        <span id="follower">4.76</span>
+                                                        <span>M subscribers</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+            
+                                    <div class="cont-box">
+                                        <h4><a href="https://www.instagram.com/wanderershub/?hl=en">Prerna and harsh</a></h4>
+                                        <h6>Youtuber</h6>
+                                    </div>
+            
+            
                                 </div>
+            
+            
+            
+            
                             </div>
+            
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 wow zoomIn" data-wow-delay=".2s" style="width: 100%;">
+            
+                                <div class="single-speaker-2 active">
+                                    <div class="box">
+                                        <div class="img-box border-rot">
+                                            <img style="padding: 6px;" src="assets/Compressed/royal.jpg" alt="">
+                                            <div class="m" style="display: none;">
+                                                <div class="flex trans">
+                                                    <h4 style="color: white;">Youtube Subscribers </h4>
+                                                    <div style="display: flex; flex-direction: row;">
+                                                        <span id="follower">1.49</span>
+                                                        <span>M Subscribers</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <div class="cont-box">
+                                        <h4><a href="https://www.youtube.com/c/royaljordanianR">royal jordanian</a></h4>
+                                        <h6>Youtuber</h6>
+                                    </div>
+            
+            
+                                </div>
+            
+            
+            
+            
+                            </div>
+                            
+                            
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 wow zoomIn" data-wow-delay=".2s" style="width: 100%;">
+            
+                                <div class="single-speaker-2 active">
+                                    <div class="box">
+                                        <div class="img-box border-rot">
+                                            <img style="padding: 6px;" src="assets/Compressed/shagun malhotra1.jpg" alt="">
+                                            <div class="m" style="display: none;">
+                                                <div class="flex trans">
+                                                    <h4 style="color: white;">Instagram follower </h4>
+                                                    <div style="display: flex; flex-direction: row;">
+                                                        <span id="follower">219</span>
+                                                        <span>k followers</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <div class="cont-box">
+                                        <h4><a href="https://www.instagram.com/myfoodproject/?hl=en">shagun malhotra</a></h4>
+                                        <h6>Food Blogger</h6>
+                                    </div>
+            
+            
+                                </div>
+            
+            
+            
+            
+                            </div>
+            
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 wow zoomIn" data-wow-delay=".2s" style="width: 100%;">
+            
+                                <div class="single-speaker-2 active">
+                                    <div class="box">
+                                        <div class="img-box border-rot">
+                                            <img style="padding: 6px;" src="assets/Compressed/dimple arora1.jpg" alt="">
+                                            <div class="m" style="display: none;">
+                                                <div class="flex trans">
+                                                    <h4 style="color: white;">Instagram follower </h4>
+                                                    <div style="display: flex; flex-direction: row;">
+                                                        <span id="follower">126</span>
+                                                        <span>k followers</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <div class="cont-box">
+                                        <h4><a href="https://www.instagram.com/food_lunatic/?hl=en">dimple arora</a></h4>
+                                        <h6>Food Blogger</h6>
+                                    </div>
+            
+            
+                                </div>
+            
+            
+            
+            
+                            </div>
+                           
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 wow zoomIn" data-wow-delay=".2s" style="width: 100%;">
+            
+                                <div class="single-speaker-2 active">
+                                    <div class="box">
+                                        <div class="img-box border-rot">
+                                            <img style="padding: 6px;" src="assets/Compressed/monday.jpg" alt="">
+                                            <div class="m" style="display: none;">
+                                                <div class="flex trans">
+                                                    <h4 style="color: white;">Youtube Subscribers </h4>
+                                                    <div style="display: flex; flex-direction: row;">
+                                                        <span id="follower">433</span>
+                                                        <span>k Subscribers</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <div class="cont-box">
+                                        <h4><a href="https://www.youtube.com/c/TravelingMondays">travelling monday</a></h4>
+                                        <h6>Youtuber</h6>
+                                    </div>
+            
+            
+                                </div>
+            
+            
+            
+            
+                            </div>
+                            
+                            <!-- <div class="col-lg-3 col-md-6 col-sm-6 col-12 wow zoomIn" data-wow-delay=".2s">
+            
+                                <div class="single-speaker-2 active">
+                                    <div class="box">
+                                        <div class="img-box border-rot">
+                                            <img style="padding: 6px;" src="assets/Compressed/tarkin.jpg" alt="">
+                                            <div class="m" style="display: none;">
+                                                <div class="flex trans">
+                                                    <h4 style="color: white;">Youtube Subscribers </h4>
+                                                    <div style="display: flex; flex-direction: row;">
+                                                        <span id="follower">10.7</span>
+                                                        <span>M Subscribers</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <div class="cont-box">
+                                        <h4><a href="https://www.youtube.com/channel/UCEPL07qzVsOcHd3sMUws65g">trakintech</a></h4>
+                                        <h6>Speaker</h6>
+                                    </div>
+            
+            
+                                </div>
+            
+            
+            
+            
+                            </div> -->
+                            
+            
                         </div>
                     </div>
-                     <div class="single-schedule-right">
-
-                        <div class="col-lg-12 col-md-6 col-sm-6 col-12 wow fadeInUp">
-
-                            <div class="single-sidebar speaker-info">
-                                <div class="img-box">
-                                    <img src="assets/Compressed/data-science-icon.png" alt="">
-                                </div>
-                                <div class="cont-box">
-                                    <h4><a href="#">Data Science</a></h4>
-                                    <h6 class="margin-top-10">12 December 2021</h6>
-                                     <div class="social-icons text-center text-md-right margin-top-10">
-                                        <a href="#"> <span class="active"> <i class="fab fa-linkedin-in"></i></span></a>
-                                        <a href="#"> <span><i class="fab fa-facebook-f"></i> </span></a>
-                                        <a href="#"> <span> <i class="fab fa-twitter"></i></span> </a>
-                                        <a href="#"> <span><i class="fab fa-pinterest-p"></i>
-                                            </span></a>
-                                    </div> 
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
-
-               <div class="single-schedule-right">
-
-                        <div class="col-lg-12 col-md-6 col-sm-6 col-12 wow fadeInUp">
-
-                            <div class="single-sidebar speaker-info">
-                                <div class="img-box">
-                                    <img src="assets/Compressed/coming-soon.png" alt="">
-                                </div>
-                                <div class="cont-box">
-                                    <h4><a href="#">More to we announce soon</a></h4>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
+                </div>
 
 
 
@@ -237,7 +509,8 @@
             </div>
         </div>
     </div>
-    <div class="e_speaker-area padding-top-15 padding-bottom-20" id="speaker">
+ 
+    <!-- <div class="e_speaker-area padding-top-15 padding-bottom-20" id="speaker">
         <div class="container">
             <div class="row justify-content-center margin-bottom-20">
                 <div class="col-lg-7 wow fadeInUp">
@@ -247,7 +520,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row " style="justify-content: center;">
+            <div class="column " style="justify-content: center;">
 
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12 wow zoomIn" data-wow-delay=".2s">
 
@@ -405,7 +678,7 @@
 
                 </div>
                 
-                <!-- <div class="col-lg-3 col-md-6 col-sm-6 col-12 wow zoomIn" data-wow-delay=".2s">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 wow zoomIn" data-wow-delay=".2s">
 
                     <div class="single-speaker-2 active">
                         <div class="box">
@@ -439,149 +712,8 @@
 
             </div>
         </div>
-    </div>
-    <div class="single-schedule-wrapper padding-top-120" style="padding-top: 41px;">
-        <div class="container">
-            <div class="row"">
-                <div class="col-lg-9 col-12">
-                    <div class="single-schedule-left"  > 
-
-
-
-
-
-                        <div class="ss-content-box padding-bottom-60 wow fadeInUp">
-                            <div class="btn_wrapper margin-top-30 button-reg">
-                                <a href="#form-reg" class="btn1">Register for Content Conclave</a>
-                                <!-- <a href="#" class="btn2">contact now</a> -->
-                            </div>
-                            <h2 class="margin-bottom-30">About</h2>
-                            <p>Content Conclave is a fun event aimed at introducing Content as a Product. Eminent social
-                                personalities like Tech Vlogger, Moto Vlogger, Marvel Studio Creatives, Travel Vlogger,
-                                Food Vlogger and many more. The Creators will share their journey and also advise the
-                                budding creators while answering their doubts. This live interactive session will cover
-                                topics like Vlogging, Tools of Social Media Marketing, Algorithms of the Social Media ,
-                                Strategies and more. The content that they produce will bring eternity to life. This
-                                event trains the students through a series of sessions that focus on creatively
-                                promoting companies and goods. During the pandemic, we have seen a mainstream growth in
-                                digital marketing with many products finding their audience online. The event comprises
-                                many activities on promotion of brands in an unconventional way.
-
-                            </p>
-
-                            <!-- <a href="ticket.html" class="btn1 margin-top-30">Book now</a> -->
-                        </div>
-
-                        <div class="ss-content-box padding-bottom-60 wow fadeInUp">
-                            <h2 class="margin-bottom-30">About Speakers</h2>
-
-                            <h2 class="margin-top-30 font-head">WANDERERS HUB (28 January 2022 || 5:30 PM to 6:30 PM)</h2>
-                            <p>
-                                The Travel Vloggers, Prerna and Harsh, take you to different places along with them while you are sitting at your home. Their diverse content has given them a huge following of more than 4.75 Million YouTube Subscribers. This is the place for a real wanderer.
-                            </p>
-
-                            <h2 class="margin-top-30 font-head">ROYAL JORDANIAN (28 January 2022 || 7:30 PM to 8:30 PM)</h2>
-                            <p>
-                                The Mysterious MotoVlogger has his own fan base of 1.5 Million YouTube subscribers for the content he provides. Royal Jordanian lives by only one rule- “Riding a bike is my relief, my medicine, in this crazy world”.
-                            </p>
-                            <h2 class="margin-top-30 font-head">MYFOODPROJECT (29 January 2022 || 11:00 AM to 12:00 PM)
-                            </h2>
-                            <p>
-                                Ranked #3 Food Blogger in India, Shagun Malhotra is an eminent digital creator who reviews food and uploads new recipes. Shagun gathered a community of 219k+ food lovers on Instagram. Her genuine review and unique recipes are one to watch out for.
-                            </p>
-
-                            <h2 class="margin-top-30 font-head">FOOD_LUNATIC (29 January 2022 || 2:00 PM to 3:00 PM)</h2>
-                            <p>
-                                As the name suggests, Dimple Arora is a huge food lunatic. Her videos get you all craving for amazing food. The Instagram community loves her for her fun approach towards life and especially food!
-                            </p>
-
-                            
-                            <h2 class="margin-top-30 font-head">TRAVELING MONDAYS (29 January 2022 || 5:00 PM to 6:00 PM)</h2>
-                            <p>
-                                Known for his cinematic vlogs and amazing storytelling, Shakti Singh Shekhawat is a well-known travel vlogger. He has amassed over 430k+ subscribers on YouTube. Shakti traps all his memories and travelling diaries in his videos which live for eternity.
-                            </p>
-
-                            <!-- <h2 class="margin-top-30 font-head">TRAKIN TECH (28 January 2022 || 5:30 PM to 6:30 PM)</h2>
-                            <p>
-                                Trakin Tech is a multilingual Tech Creator. If you are a tech enthusiast, you must have come across his name. The humongous 10.7 Million+ YouTube community awaits for his unboxing, reviews and news on Tech Gadgets. He also creates content on the automobile industry.
-                            </p> -->
-
-                            
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <!-- <div class="col-lg-3 col-12">
-                    <div class="single-schedule-right">
-
-                        <div class="col-lg-12 col-md-6 col-sm-6 col-12 wow fadeInUp">
-
-                            <div class="single-sidebar speaker-info">
-                                <div class="img-box">
-                                    <img src="assets/Compressed/akl.jfif" alt="">
-                                </div>
-                                <div class="cont-box">
-                                    <h4><a href="akhilendra.html">Akhilendra Rai</a></h4>
-                                    <h6 class="margin-top-10">8 January 2022</h6>
-                                    <div class="social-icons text-center text-md-right margin-top-10">
-                                        <a href="https://www.linkedin.com/in/akhilendra-rai-59277a166/"> <span
-                                                class="active"> <i class="fab fa-linkedin-in"></i></span></a>
-                                        <a href="#"> <span><i class="fab fa-facebook-f"></i> </span></a>
-                                        <a href="#"> <span> <i class="fab fa-twitter"></i></span> </a>
-                                        <a href="#"> <span><i class="fab fa-pinterest-p"></i>
-                                            </span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="single-schedule-right">
-
-                        <div class="col-lg-12 col-md-6 col-sm-6 col-12 wow fadeInUp">
-
-                            <div class="single-sidebar speaker-info">
-                                <div class="img-box">
-                                    <img src="assets/Compressed/data-science-icon.png" alt="">
-                                </div>
-                                <div class="cont-box">
-                                    <h4><a href="#">Data Science</a></h4>
-                                    <h6 class="margin-top-10">12 December 2021</h6>
-                                     <div class="social-icons text-center text-md-right margin-top-10">
-                                        <a href="#"> <span class="active"> <i class="fab fa-linkedin-in"></i></span></a>
-                                        <a href="#"> <span><i class="fab fa-facebook-f"></i> </span></a>
-                                        <a href="#"> <span> <i class="fab fa-twitter"></i></span> </a>
-                                        <a href="#"> <span><i class="fab fa-pinterest-p"></i>
-                                            </span></a>
-                                    </div> 
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
-
-               <div class="single-schedule-right">
-
-                        <div class="col-lg-12 col-md-6 col-sm-6 col-12 wow fadeInUp">
-
-                            <div class="single-sidebar speaker-info">
-                                <div class="img-box">
-                                    <img src="assets/Compressed/coming-soon.png" alt="">
-                                </div>
-                                <div class="cont-box">
-                                    <h4><a href="#">More to we announce soon</a></h4>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
-
-
-
-            </div>
-        </div>
-    </div>
+    </div> 
+  
 
     </div>
 
