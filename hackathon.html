@@ -95,48 +95,47 @@
 
 
     .bg-modal {
-	background-color: rgba(0, 0, 0, 0.8);
-	width: 100%;
-	height: 100%;
-	position: fixed;
-    z-index: 343;
-	top: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 343;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.modal-contents {
-	height: 300px;
-	width: 500px;
-	background-color: white;
-	text-align: center;
-	padding: 20px;
-	position: relative;
-	border-radius: 4px;
-}
+    .modal-contents {
+        height: 500px;
+        width: 500px;
+        background-color: white;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+        border-radius: 4px;
+    }
 
-input {
-	margin: 15px auto;
-	display: block;
-	width: 50%;
-	padding: 8px;
-	border: 1px solid gray;
-}
+    input {
+        margin: 15px auto;
+        display: block;
+        width: 50%;
+        padding: 8px;
+        border: 1px solid gray;
+    }
 
-.close {
-	position: absolute;
-	top: 0;
-	right: 10px;
-	font-size: 42px;
-	color: #333;
-	transform: rotate(45deg);
-	cursor: pointer;
-	/* &:hover {
+    .close {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        font-size: 42px;
+        color: #333;
+        transform: rotate(45deg);
+        cursor: pointer;
+        /* &:hover {
 		color: #666;
 	} */
-}
-
+    }
 </style>
 
 <body>
@@ -254,7 +253,7 @@ input {
                             <div
                                 style="display: flex; width: 100%; flex-direction: row; align-items: center; justify-content: center;">
                                 <a href="https://hackaweb.devfolio.co/" target="_blank"
-                                    style="color: white; margin-bottom: 25px;"><button >Register for
+                                    style="color: white; margin-bottom: 25px;"><button>Register for
                                         Hackathon</button></a>
                             </div>
                             <button id="aba" style="display: none;">sa</button>
@@ -1007,17 +1006,32 @@ input {
 
     <div class="bg-modal">
         <div class="modal-contents">
-            <div><h3>Lorem, ipsum dolor sit</h3></div>
-            <div style="margin-bottom: 20px;"><h6>Lorem ipsum s velit a dolorum in, a</h6></div>
-    
+            <div>
+                <h4><strong>PROBLEM STATEMENTS RELEASED</strong></h4>
+            </div>
+            <div style="margin-bottom: 20px;">
+                <br>
+                <h5>Submit your idea on how will your team members solve the problems through the given form</h5>
+                <br>
+                <h6>TO BE FILLED ONLY BY ONE MEMBER OF THE TEAM</h6>
+            </div>
+
             <div class="close">+</div>
             <div class="column" style="width: 60%; align-items: center; justify-content: center;margin:auto; ;">
-                <button style="margin-bottom: 5px; ">Submit Papers</button>
-            <button>Read guidelines</button>
+                <a href="/PROBLEM%20STATEMENTS.pdf" target="_blank"><button style="margin-bottom: 5px; ">VIEW
+                        STATEMENTS</button></a>
+                <a href="https://forms.gle/GTKLkdj7RNet1vpN6" target="_blank"><button
+                        style="margin-bottom: 5px; ">SUBMIT
+                        IDEA</button></a>
+                <div style="margin-bottom: 20px;">
+                    <br>
+                    <h7>Don't Worry !! You still have a chance till 7 February</h7>
+                </div>
+                <button>REGISTER NOW</button>
             </div>
-    
-            
-    
+
+
+
         </div>
     </div>
 
@@ -1027,14 +1041,14 @@ input {
     <div class="scrollup"><i class="fas fa-arrow-up"></i></div>
 
     <script>
-         
-         document.getElementById('aba').addEventListener("click", function() {
-	document.querySelector('.bg-modal').style.display = "flex";
-});
 
-document.querySelector('.close').addEventListener("click", function() {
-	document.querySelector('.bg-modal').style.display = "none";
-});
+        document.getElementById('aba').addEventListener("click", function () {
+            document.querySelector('.bg-modal').style.display = "flex";
+        });
+
+        document.querySelector('.close').addEventListener("click", function () {
+            document.querySelector('.bg-modal').style.display = "none";
+        });
     </script>
 
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
