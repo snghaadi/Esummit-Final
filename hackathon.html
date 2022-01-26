@@ -52,6 +52,10 @@
             button.addEventListener("click", createRipple);
         }
 
+
+
+
+
     </script>
     <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
 </head>
@@ -88,6 +92,51 @@
 
 
     }
+
+
+    .bg-modal {
+	background-color: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+    z-index: 343;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-contents {
+	height: 300px;
+	width: 500px;
+	background-color: white;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	border-radius: 4px;
+}
+
+input {
+	margin: 15px auto;
+	display: block;
+	width: 50%;
+	padding: 8px;
+	border: 1px solid gray;
+}
+
+.close {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 42px;
+	color: #333;
+	transform: rotate(45deg);
+	cursor: pointer;
+	/* &:hover {
+		color: #666;
+	} */
+}
+
 </style>
 
 <body>
@@ -205,9 +254,10 @@
                             <div
                                 style="display: flex; width: 100%; flex-direction: row; align-items: center; justify-content: center;">
                                 <a href="https://hackaweb.devfolio.co/" target="_blank"
-                                    style="color: white; margin-bottom: 25px;"><button>Register for
+                                    style="color: white; margin-bottom: 25px;"><button >Register for
                                         Hackathon</button></a>
                             </div>
+                            <button id="aba" style="display: none;">sa</button>
                             <h2 class="margin-bottom-30">About</h2>
                             <p>Experience the fusion of technology and innovation generating high profile solutions at
                                 this E-Summit’22. Your friendly
@@ -955,9 +1005,37 @@
 
     </footer>
 
+    <div class="bg-modal">
+        <div class="modal-contents">
+            <div><h3>Lorem, ipsum dolor sit</h3></div>
+            <div style="margin-bottom: 20px;"><h6>Lorem ipsum s velit a dolorum in, a</h6></div>
+    
+            <div class="close">+</div>
+            <div class="column" style="width: 60%; align-items: center; justify-content: center;margin:auto; ;">
+                <button style="margin-bottom: 5px; ">Submit Papers</button>
+            <button>Read guidelines</button>
+            </div>
+    
+            
+    
+        </div>
+    </div>
+
+
 
 
     <div class="scrollup"><i class="fas fa-arrow-up"></i></div>
+
+    <script>
+         
+         document.getElementById('aba').addEventListener("click", function() {
+	document.querySelector('.bg-modal').style.display = "flex";
+});
+
+document.querySelector('.close').addEventListener("click", function() {
+	document.querySelector('.bg-modal').style.display = "none";
+});
+    </script>
 
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
