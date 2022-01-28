@@ -9,13 +9,13 @@ $code = $_GET['code'];
 <?php require __DIR__ . '/mailconf.php'; ?>
 
 <?php
-$sql = "UPDATE stock SET payment_status='PAID' WHERE code LIKE $code";
+$sql = "UPDATE ipl SET payment_status='PAID' WHERE code LIKE $code";
 if ($connection->query($sql) === TRUE) {
     $sub = "NO REPLY - PAYMENT SUCCESSFUL";
     $msg = "
         Mr/Ms. $name,
         <br>
-        Congratulations! You have been successfully registered for Stock Workshop + Simulation Games.
+        Congratulations! You have been successfully registered for IPL Simulation Games.
         <br>
         For any query, contact us at : +91-8957946660
         <br>

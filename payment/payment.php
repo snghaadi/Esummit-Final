@@ -20,11 +20,11 @@ session_start();
 $MERCHANT_KEY = "C5UgFd";
 $SALT = "VtJ2cMfmZJ0hmVWtIVJmCDEJl5nLcXZ7";
 $txnid = bin2hex(random_bytes(20));
-$name = $_SESSION['name'];
-$email = $_SESSION['email'];
+$name = $_SESSION['name_1'];
+$email = $_SESSION['email_1'];
 $code = $_SESSION['code'];
-$amount = 99;
-$productInfo = "Payment for Stock Workshop + Simulation Game";
+$amount = 1;
+$productInfo = "Payment for IPL Auctions";
 $surl = "https://esummit.ecellnitb.com/payment/success.php?name=$name&email=$email&code=$code"; //success URL
 $furl = "https://esummit.ecellnitb.com/payment/failure.php?name=$name&email=$email&code=$code"; //failure URL
 
