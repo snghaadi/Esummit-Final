@@ -322,6 +322,14 @@
                                 <li>Bidding must be done in a disciplined manner</li>
                             </od>
                         </p>
+                        <br>
+                        <h2 class="margin-bottom-30">Judging Criteria</h2>
+                         <p>
+                            <od>
+                                <li>Overall Career Performance of the Cricket Team (Total Rating = Sum of rating of 16 team players)</li>
+                                <li>If scores of any 2 teams are even, Active Players in the Team would be considered.</li>
+                            </od>
+                        </p>
                         <h2 class="margin-bottom-30">Schedule</h2>
                         <div class="cont">
                             <div class="timeline">
@@ -339,22 +347,20 @@
                                     </li>
                                     <li>
                                         <div class="timeline-content">
-                                            <h3 class="date">15<sup>th</sup> February 2022
-                                                (11 days)</h3>
-                                            <h1>quizz</h1>
-                                            <p>This is a quizzing round based on the knowledge of cricket and
+                                            <h3 class="date">15<sup>th</sup> February 2022</h3>
+                                            <h1>quiz</h1>
+                                            <p>This is a quizzing round based on the knowledge of
                                                 previous editions of IPL. It will be an elimination round
                                                 and top 10 teams will be selected for the final round. The quiz will
-                                                consist of questions, of varying difficulty levels,
-                                                depending upon the number of teams participating.</p>
+                                                consist of questions, of varying difficulty levels.</p>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="timeline-content">
                                             <h3 class="date">16<sup>th</sup> February 2022</h3>
                                             <h1>round 1 screening</h1>
-                                            <p>Results of Round 1 is announced and top 10 teams will be selected fot
-                                                IPL Auctions
+                                            <p>Results of Round 1 will be announced and top 10 teams will be selected for
+                                                IPL Auction Simulation
                                             </p>
                                         </div>
                                     </li>
@@ -363,10 +369,10 @@
                                             <h3 class="date">18<sup>th</sup> February to 20<sup>th</sup> February
                                                 2022
                                                 (3 days)</h3>
-                                            <h1>ipl bidding</h1>
+                                            <h1>IPL bidding</h1>
                                             <p>If you like taking calculated risks, this competition is for you. The
                                                 final 10 teams will compete in a live E-Auction of
-                                                players. Each team will be given a fixed amount (Digital Money worth
+                                                players. Each team will be given a fixed amount (Virtual Money worth
                                                 100 Crores) which will be used by them during the
                                                 auction. The aim will be to build a team that maximizes the total
                                                 ratings of the players of the team in the limited
@@ -374,7 +380,6 @@
                                             </p>
                                         </div>
                                     </li>
-
                                     <li>
                                         <div class="timeline-content">
                                             <h3 class="date">23<sup>th</sup> February 2022</h3>
@@ -455,23 +460,23 @@
                                 <form method="POST" action="ipl.php">
                                     <div class="input-wrapper">
                                         <span class="icon"><i class="far fa-user"></i></span>
-                                        <input name="team_name" required type="text" placeholder="Team Name">
+                                        <input name="team_name" required type="text" placeholder="Team Name" required>
                                     </div>
                                     <div class="input-wrapper">
                                         <span class="icon"><i class="far fa-user"></i></span>
-                                        <input name="name_1" required type="text" placeholder="Leader Name">
+                                        <input name="name_1" required type="text" placeholder="Leader Name" required>
                                     </div>
                                     <div class="input-wrapper">
                                         <span class="icon"><i class="far fa-phone"></i></span>
-                                        <input name="number_1" required type="tel" placeholder="Leader Mobile Number">
+                                        <input name="number_1" required type="tel" placeholder="Leader Mobile Number" required>
                                     </div>
                                     <div class="input-wrapper">
                                         <span class="icon"><i class="far fa-envelope"></i></span>
-                                        <input name="email_1" required type="email" placeholder="Leader's Email">
+                                        <input name="email_1" required type="email" placeholder="Leader's Email" required>
                                     </div>
                                     <div class="input-wrapper">
                                         <span class="icon"><i class="far fa-university"></i></span>
-                                        <input name="team_college" required type="text" placeholder="Leader's College">
+                                        <input name="team_college" required type="text" placeholder="Leader's College" required>
                                     </div>
                                     <div class="form-check mb-3" id="check-manit-mail">
                                         <input class="form-check-input" type="checkbox" value=""
@@ -483,9 +488,9 @@
                                         </label>
                                     </div>
                                     <div class="input-wrapper" id="manit-mail">
-                                        <span class="icon"><i class="far fa-user"></i></span>
+                                        <span class="icon"><i class="far fa-users"></i></span>
                                         <input name="sch_no" id="manit-mail-input" type="text"
-                                            placeholder="e.g 201112028 (Leaders's Scholar Number) --- Fill this only if all members of your team are from MANIT" />
+                                            placeholder="Enter Scholar Number of all team members" />
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6">
@@ -771,7 +776,7 @@
     <script src="assets/js/waypoints.min.js"></script>
     <script src="assets/js/easing.min.js"></script>
     <script src="assets/js/isotope.pkgd.min.js"></script>
-    <!-- <script src="assets/js/bplan.js"></script> -->
+     <script src="assets/js/bplan.js"></script> 
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
