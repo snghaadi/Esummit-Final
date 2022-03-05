@@ -26,7 +26,8 @@ $sch_no = $_SESSION['sch_no'];
       </div>
       <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
         <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">MANIT Verification</h1>
-        <p class="mb-8 leading-relaxed">Please upload a google drive link of your MANIT ID Card or Provisional ID Card or JOSSA/DASA Allotment Letter or anything that proves you are a MANITian....We'll manually verify...If you have any confusion contact us at</p>
+        <strong><h3>To be filled only on behalf of team leader if all the members of your team are MANITian</h3></strong>
+        <p class="mb-8 leading-relaxed">Please upload a google drive link of your MANIT ID Card or Provisional ID Card or JOSSA/DASA Allotment Letter or anything that proves you are a MANITian.If you have any confusion contact us at</p>
         <p>+91 8957946660</p>
         <p class="mb-8 leading-relaxed">Kindly make sure that the link is publicly shared :)</p>
         <div class="flex w-full md:justify-start justify-center items-end">
@@ -40,21 +41,21 @@ $sch_no = $_SESSION['sch_no'];
           </form>
         </div>
       </div>
-      <!-- <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Please enter OTP</h1>
-        <p class="mb-8 leading-relaxed">We have sent you OTP on <?php echo $sch_no ?>@manit.ac.in if you are facing problem with OTP please try again...</p>
-        <p class="mb-8 leading-relaxed">Login your schNo@manit.ac.in in Outlook.com to get the OTP :)</p>
+       <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Caution</h1>
+        <strong><p class="mb-8 leading-relaxed">If any member of your team is non-MANITian, please click the button below</p></strong>
+        <p class="mb-8 leading-relaxed">Otherwise your team registration will be deemed invalid</p>
         <div class="flex w-full md:justify-start justify-center items-end">
           <form method="post" action="">
-            <div class="relative mr-4 lg:w-full xl:w-1/2 w-2/4">
-              <label for="hero-field" class="leading-7 text-sm font-bold text-gray-600">One Time Password</label>
-              <input type="text" id="hero-field" placeholder="e.g. 9753" name="otp" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-            </div>
+            <!--<div class="relative mr-4 lg:w-full xl:w-1/2 w-2/4">-->
+            <!--  <label for="hero-field" class="leading-7 text-sm font-bold text-gray-600">One Time Password</label>-->
+            <!--  <input type="text" id="hero-field" placeholder="e.g. 9753" name="otp" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">-->
+            <!--</div>-->
             <br>
-            <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" name="submit">Verify</button>
+            <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" name="submit">Proceed to payment</button>
           </form>
         </div>
-      </div> -->
+      </div>
     </div>
   </section>
 </body>
@@ -62,34 +63,13 @@ $sch_no = $_SESSION['sch_no'];
 </html>
 
 <?php
-// if (isset($_POST['submit'])) {
-//   $user_otp = $_POST['otp'];
-//   if ($user_otp == $otp) {
-//     $sql = "UPDATE stock SET payment_status='MANIT VERIFIED' WHERE code LIKE $code";
-
-//     if ($connection->query($sql) === TRUE) {
-//       // echo "Record updated successfully";
-// 
+if (isset($_POST['submit'])) {
 ?>
-<script>
-  //         swal("Good job!", "You are sucessfully registered", "success")
-  //       
-</script>
+    <script>
+        window.location.href = '../payment/payment.php';
+    </script>
 <?php
-//       header("refresh:1;url=../stock.html");
-//     } else {
-//       echo "Error updating record: " . $connection->error;
-//     }
-//   } else {
-//     
-?>
-<script>
-  //       swal("Something went wrong !", "OTP do not match<br>Please try again", "error");
-  //     
-</script>
-<?php
-//   }
-// }
+}
 ?>
 
 <?php

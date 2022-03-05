@@ -421,9 +421,9 @@
                                 <ul>
                                     <li>
                                         <div class="timeline-content">
-                                            <h3 class="date">29<sup>th</sup> January to 13<sup>th</sup> February
+                                            <h3 class="date">29<sup>th</sup> January to 9<sup>th</sup> February
                                                 2022
-                                                (16
+                                                (11
                                                 days)</h3>
                                             <h1>Registration</h1>
                                             <p>Team must register themselves during this time interval
@@ -563,19 +563,26 @@
                                         <span class="icon"><i class="far fa-university"></i></span>
                                         <input name="team_college" required type="text" placeholder="Leader's College" required>
                                     </div>
-                                    <div class="form-check mb-3" id="check-manit-mail">
-                                        <input class="form-check-input" type="checkbox" value=""
-                                            id="flexCheckDefault" />
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Tick this box if all members of your team are a student of Maulana Azad
-                                            National Institute of
-                                            Technology (MA(NIT)) Bhopal
-                                        </label>
-                                    </div>
+                                    <!--<div class="form-check mb-3" id="check-manit-mail">-->
+                                    <!--    <input class="form-check-input" type="checkbox" value=""-->
+                                    <!--        id="flexCheckDefault" />-->
+                                    <!--    <label class="form-check-label" for="flexCheckDefault">-->
+                                    <!--        Tick this box if all members of your team are a student of Maulana Azad-->
+                                    <!--        National Institute of-->
+                                    <!--        Technology (MA(NIT)) Bhopal-->
+                                    <!--    </label>-->
+                                    <!--</div>-->
+                                    <!--<div class="form-check mb-3" id="check-manit-mail">-->
+                                        <!--<input class="form-check-input" type="checkbox" value=""-->
+                                        <!--    id="flexCheckDefault" />-->
+                                    <!--    <label class="form-check-label" for="flexCheckDefault">-->
+                                    <!--        Fill the below box only if all members of your team are from MANIT Bhopal. Otherwise leave it blank.-->
+                                    <!--    </label>-->
+                                    <!--</div>-->
                                     <div class="input-wrapper" id="manit-mail">
                                         <span class="icon"><i class="far fa-users"></i></span>
                                         <input name="sch_no" id="manit-mail-input" type="text"
-                                            placeholder="Enter Scholar Number of all team members" />
+                                            placeholder="For MANITians only - Enter Scholar Number of all team members" />
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6">
@@ -631,9 +638,13 @@
                                         <span class="icon"><i class="far fa-envelope"></i></span>
                                         <input name="email_4" type="email" placeholder="Member-3 Email">
                                     </div>
+                                    <div class="input-wrapper">
+                                        <span class="icon"><i class="far fa-user"></i></span>
+                                        <input name="ca_code" type="text" placeholder="Referral Code - To be filled only via CAs/FRs">
+                                    </div>
                                     <p>By Clicking on Submit you agree on our <a href="TC.pdf" target="_blank">Terms and
                                             Conditions and Privacy Policy</a></p>
-                                    <button name="submit" type="submit" class="btn1">Submit</button>
+                                    <button name="submit" type="submit" class="btn1" disabled>Registration Closed</button>
                                 </form>
                             </div>
                         </div>
@@ -861,7 +872,7 @@
     <script src="assets/js/waypoints.min.js"></script>
     <script src="assets/js/easing.min.js"></script>
     <script src="assets/js/isotope.pkgd.min.js"></script>
-    <script src="assets/js/bplan.js"></script>
+    <!--<script src="assets/js/bplan4.js"></script>-->
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>

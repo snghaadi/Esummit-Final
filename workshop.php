@@ -15,7 +15,7 @@
         // $ques = mysqli_escape_string($connection, $_POST['ques']);
 
 
-        $query = "INSERT INTO workshop (name, email, number, college, year, course)";
+        $query = "INSERT INTO gl (name, email, number, college, year, course)";
 
         $query .= "VALUES('{$name}', '{$email}', '{$number}', '{$college}', '{$year}', '{$course}')";
 
@@ -32,7 +32,7 @@
             <script>swal("Good job!", "You are sucessfully registered", "success")
             </script>
             <?php
-            header("refresh:1;url=workshop.html");
+            header("refresh:1;url=keynote.html");
         }
     // }
 ?>

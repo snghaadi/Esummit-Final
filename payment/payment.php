@@ -23,7 +23,7 @@ $txnid = bin2hex(random_bytes(20));
 $name = $_SESSION['name_1'];
 $email = $_SESSION['email_1'];
 $code = $_SESSION['code'];
-$amount = 1;
+$amount = 100;
 $productInfo = "Payment for IPL Auctions";
 $surl = "https://esummit.ecellnitb.com/payment/success.php?name=$name&email=$email&code=$code"; //success URL
 $furl = "https://esummit.ecellnitb.com/payment/failure.php?name=$name&email=$email&code=$code"; //failure URL
