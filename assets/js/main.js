@@ -39,7 +39,7 @@ Version        : 1.0
             date: '12/30/2023 12:00:00',
             offset: +6
         }, function () {
-            alert('Countdown done!');
+            // alert('Countdown done!');
         });
 
         // video popup

@@ -1,0 +1,290 @@
+.upmanyuhead
+{
+    display: flex;
+    width: 100%;
+}
+.innerhead
+{
+    display: flex;
+    width: 100%;
+    background-color: white;
+}
+
+.lefthead
+{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-top: 7px;
+
+}
+.sponsorhead
+{
+    display: flex;
+
+}
+.innerspon
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     align-items: center;
+
+}
+.innerspon img
+{
+    height: 50px;
+    margin-left: -30px;
+}
+.innerhead h6
+{
+    font-size: 17px;
+}
+.tophead img
+{
+    height: 280px;
+}
+
+.upmanyuft
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+.upmanyuft h4
+{
+    font-size: 40px;
+    font-weight: 700;
+    color: blue;
+}
+
+.grabbtn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.grabbtn button
+{
+  
+  padding: 5px 66px;
+  border-radius: 58px;
+  background-color: red;
+}
+
+.righthead
+{
+    display: flex;
+    width: 50%;
+    background-image: url("../image/back.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+
+}
+.righthead img
+{
+    height: 600px;
+    width: 70%;
+}
+
+
+.comtime
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+}
+.innertime
+{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffd400;
+    border-radius: 50px;
+    padding: 5px 0px;
+    margin-top: -75px;
+  
+}
+.innertime h3{
+    font-size: 60px;
+    color: white;
+
+}
+@media(max-width:900px)
+{
+    .innerhead {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        background-color: white;
+    }
+
+    .righthead {
+        display: flex;
+        width: 100%;
+        background-image: url(../image/back.png);
+        background-position: right;
+        background-repeat: no-repeat;
+        justify-content: center;
+    }
+
+    .lefthead {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding-left: 40px;
+        padding-top: 7px;
+    }
+
+    .innertime {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffd400;
+        border-radius: 50px;
+        padding: 5px 0px;
+        margin-top: 18px;
+    }
+    .tophead img {
+        height: 260px;
+        width: 90%;
+    }
+    .innertime h3 {
+        font-size: 38px;
+        color: white;
+    }
+
+  
+}
+
+@media(max-width:600px)
+{
+    .righthead img {
+        height: 510px;
+        width: 79%;
+    }
+    .upmanyuft h4 {
+        font-size: 31px;
+        font-weight: 700;
+        color: blue;
+    }
+
+    .innertime h3 {
+        font-size: 31px;
+        color: white;
+    }
+}
+
+@media(max-width:450px)
+{
+    .tophead img {
+        height: 226px;
+        width: 90%;
+    }
+
+    .grabbtn button {
+        padding: 5px 56px;
+        border-radius: 58px;
+        background-color: red;
+    }
+
+    .lefthead {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding-left: 26px;
+        padding-top: 7px;
+    }
+
+    .innerspon img {
+        height: 42px;
+        margin-left: -30px;
+    }
+    .innertime h3 {
+        font-size: 23px;
+        color: white;
+    }
+}
+
+.aboutsection
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+}
+.innerabout
+{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    padding: 50px 0px;
+    
+
+}
+
+.leftabout
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+.leftabout h2
+{
+    color: red;
+}
+
+.rightabout
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 50%;
+
+}
+.rightabout img
+{
+    width: 70%;
+}
+
+@media(max-width:900px)
+{
+    .innerabout {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 90%;
+        padding: 50px 0px;
+    }
+    .rightabout {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .rightabout img {
+        width: 53%;
+    }
+    .leftabout {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+    }
+}
+
